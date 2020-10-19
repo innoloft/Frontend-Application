@@ -1,3 +1,36 @@
+# Solution
+
+I have completed my task and made it available for preview online, click [Here](https://innoloft-dashboard.vercel.app) to view.
+
+# How this Dashboard can be improved in the future
+
+There are many ways this dashboard can be improved, I'll be listing some of the ones I've discovered while I was working on it.
+
+1. Better state management with Redux.
+
+If I'd be working again on this project or one related to this, I'll make sure to manage the shared states with Redux.
+
+2. Password Suggestion technology.
+
+I'll implement a password suggestion technology that helps the user choose a strong password while typing. I've written an NPM package that handles that.
+
+3. Security warning
+
+I'll implement a technology that warns a user against the actions they're about to take, aside from technically doing this with JavaSCript, I'll also use colors like I used in the alert component to complement the message.
+
+4. Update route meta tags
+
+I'll work on the meta tags for each route components using Helmet npm package.
+
+# Tools and Technologies I used
+
+1. [create-react-app](https://facebook.github.io/create-react-app/)
+2. [formik](https://jaredpalmer.com/formik/)
+3. React router
+4. prop-types
+5. Custom CSS
+6. Feather Icons (Custom icon components. Check `icons` folder inside the `components` folder).
+
 # Task
 
 Create a [React](https://reactjs.org) application that provides the features described in this document.

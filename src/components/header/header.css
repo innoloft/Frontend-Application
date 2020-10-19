@@ -1,0 +1,120 @@
+header {
+    position: relative;
+    padding: 20px 16px;
+    z-index: 1000;
+}
+
+header>.row {
+    background: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header>.row>#toggle-sidebar {
+    border: none;
+    background: none;
+    color: var(--primary-color);
+}
+
+header>.row>.branding {
+    max-width: 30%;
+}
+
+header>.row>.menu {
+    color: var(--primary-color);
+}
+
+header>.row>.menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+header>.row>.menu>ul>li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 24px;
+    position: relative;
+}
+
+header>.row>.menu>ul>li:last-of-type {
+    margin-right: 0;
+}
+
+header>.row>.menu>ul>li.active::before {
+    background: var(--notification-color);
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -4px;
+    right: -4px;
+}
+
+header>.row>.menu>ul>li.lang>svg {
+    margin-right: 5px;
+}
+
+header>.row>.menu>ul>li.lang {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 920px) {
+    header {
+        padding: 20px 50px;
+    }
+    header>.row {
+        background: var(--accent-color);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    header>.row>#toggle-sidebar {
+        border: none;
+        display: none;
+    }
+    header>.row>.branding {
+        max-width: 15%;
+    }
+    header>.row>.menu {
+        color: var(--primary-color);
+    }
+    header>.row>.menu>ul {
+        display: flex;
+        align-items: center;
+    }
+    header>.row>.menu>ul>li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: 24px;
+        position: relative;
+    }
+    header>.row>.menu>ul>li:last-of-type {
+        margin-right: 0;
+    }
+    header>.row>.menu>ul>li.active::before {
+        background: var(--notification-color);
+        border-radius: 50%;
+        border: 2px solid var(--accent-color);
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        top: -4px;
+        right: -4px;
+    }
+    header>.row>.menu>ul>li.lang>svg {
+        margin-right: 5px;
+    }
+    header>.row>.menu>ul>li.lang {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,14 @@
+:root{
+  --primary-color: #0073f7;
+  --accent-color: #dfeeff;
+  --font-color: #222833;
+  --icon-color: #9a9ea3;
+  --notification-color: #f70036;
+  --input-border-color: #c1deff9a;
+  --very-bad: #bb0028;
+  --quite-bad: #f70036;
+  --bad: #ff315d;
+  --good: #f73a00;
+  --better: #f7a900;
+  --strong: #009c41;
+}
