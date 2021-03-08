@@ -1,0 +1,47 @@
+nav {
+    background-color: whitesmoke;
+   height: 70px;
+   margin-top: -19px !important;
+   padding: 10px;
+   div {
+       display: flex;
+       align-items: center;
+       .menu-icon {
+           padding-right: 8px;
+           display: none;
+       }
+   }
+  
+   img {
+       height: 100px;
+       width: 100px;
+   }
+}
+.navs{
+    display: flex;
+    flex-direction: columnxx ;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: red;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+       div {
+           display: flex;
+           align-items: center;
+           .menu-icon {
+               padding-right: 8px;
+               display: block;
+           }
+       }
+      
+       img {
+           height: 100px;
+           width: 100px;
+       }
+    }
+}
