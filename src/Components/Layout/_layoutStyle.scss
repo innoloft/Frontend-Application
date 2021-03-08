@@ -1,0 +1,27 @@
+.layout-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &__content-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 55px;
+    max-width: 1440px;
+    display: flex;
+
+    &__content {
+      width: calc(100% - 280px);
+      margin: 2rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media (max-width: 1021px) {
+        width: 100%;
+      }
+    }
+  }
+}

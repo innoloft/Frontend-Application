@@ -1,0 +1,38 @@
+.sidebar-container {
+  width: 280px;
+  border-bottom: 1px lighten($color: gray, $amount: 30) solid;
+
+  & > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__tab {
+    padding: 0.7rem 1rem;
+    transition: all 0.2s ease-out;
+
+    &.active {
+      background-color: darken($color: $background-color, $amount: 10);
+    }
+
+    &:hover {
+      background-color: darken($color: $background-color, $amount: 10);
+    }
+
+    &__link {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #616467;
+
+      &__title {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1021px) {
+    display: none;
+  }
+}

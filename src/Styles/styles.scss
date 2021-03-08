@@ -1,0 +1,11 @@
+@import "./variables";
+
+@import "../Components/Layout/layoutStyle";
+@import "../Components/Layout/TopNavBar/topNavBarStyle";
+@import "../Components/Layout/SideBar/sideBarStyle";
+@import "../Components/Layout/TopNavBar/ResponsiveSideBar/responsiveSideBarStyle";
+@import "../Components/Pages/ProductPage/productPageStyle";
+
+#root{
+  background-color: $background-color;
+}
