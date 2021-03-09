@@ -1,0 +1,102 @@
+.product_page_wrapper{
+    display: flex;
+    width: 100%;
+}
+.product_details{
+    width: 65%;
+    padding: 0 2em;
+}
+.user_detail{
+    width: 20.5%;
+    padding: 2em 0 0 0;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    right: 2em;
+    /* outline: 1px solid; */
+}
+.product_image{
+    height: 19em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+.product_image img{
+    height: 100%;
+}
+.product_main_info{
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+}
+.product_main_info h2{
+    margin: 0 5px 0 0;
+}
+
+.product_tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_tabs button{
+    margin: .25rem .125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all 1s;
+    cursor: pointer;
+    width: 50%;
+}
+.active_btn{
+    background-color: #272e71 !important;
+    color: #fff !important;
+}
+button:focus{
+    border: none;
+    outline: none;
+}
+.tab_content{
+    transition: all 1s;
+    padding: 2em 0;
+}
+.tab_section{
+    transition: all 2s;
+}
+
+@media screen and (min-width:1476px){
+    .user_detail{
+        width: auto !important;
+        right: auto !important;
+        position: unset !important;
+    }
+}
+
+@media screen and (max-width:1025px){
+    
+    .user_detail{
+        width: 30% !important;
+    }
+}
+@media screen and (max-width:768px){
+    
+    .user_detail{
+        display: none !important;
+    }
+    .product_details{
+        width: 100%;
+        padding: 0;
+    }
+    .product_image img{
+        height: 65%;
+    }
+}

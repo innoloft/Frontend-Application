@@ -1,0 +1,32 @@
+.sun-editor .se-wrapper {
+    position: relative!important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.sun-editor .se-resizing-bar {
+    width: auto;
+    height: auto;
+    min-height: 16px;
+    border-top: 1px solid #dadada;
+    padding: 0 4px;
+    background-color: #fafafa;
+    cursor: ns-resize;
+    display: none;
+}
+
+.sun-editor-editable {
+    font-family: Helvetica Neue,sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+    word-break: normal;
+    word-wrap: break-word;
+    padding: 5px;
+    margin: 0;
+}
+.sun-editor .se-wrapper .se-wrapper-inner {
+    min-height: 40px;
+}

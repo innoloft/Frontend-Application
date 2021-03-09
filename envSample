@@ -1,0 +1,3 @@
+REACT_APP_BASE_URL=https://api-test.innoloft.com
+
+REACT_APP_APIKEY= "Api key from google for google map"

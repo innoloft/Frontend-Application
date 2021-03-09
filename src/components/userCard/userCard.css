@@ -1,0 +1,30 @@
+.card_wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1em;
+}
+.user_profile_img{
+    width: 60px;
+    margin-right: 10px;
+}
+.user_profile_img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user_name{
+    font-weight: 700;
+    font-size: 16px;
+}
+.user_email{
+    font-weight: 600;
+    font-size: 14px;
+}
+.user_position{
+    font-weight: 400;
+    font-size: 12px;
+}
