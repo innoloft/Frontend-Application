@@ -1,0 +1,30 @@
+.strength-indicator {
+    width: calc(100% + 6px);
+    margin: 5px -3px;
+    height: 7px;
+    .bar {
+        float: left;
+        width: 20%;
+        padding: 0 3px;
+        div {
+            border: 1px solid #888888;
+            height: 5px;
+            border-radius: 2px;
+        }
+        &.highlight:nth-child(1) {
+            div {background-color: #ffff88;}
+        }
+        &.highlight:nth-child(2) {
+            div {background-color: #dddd66;}
+        }
+        &.highlight:nth-child(3) {
+            div {background-color: #bbbb44;}
+        }
+        &.highlight:nth-child(4) {
+            div {background-color: #999922;}
+        }
+        &.highlight:nth-child(5) {
+            div {background-color: #777700;}
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.tab {
+    .tab-bar {
+        height: 30px;
+        .tab-item {
+            border-top-right-radius: 5px;
+            text-align: center;
+            border: 1px solid #bdbdbd;
+            display: inline-block;
+            height: 100%;
+            width: 200px;
+            background-color: #dbdbdb;
+            &.active {
+                background-color: white;
+                border-bottom-color: white;
+            }
+            .tab-title {
+                font-size: 16px;
+                line-height: 30px;
+            }
+            * {
+                cursor: pointer;
+            }
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+    }
+    .tab-content {
+        margin-top: -1px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid #bdbdbd;
+        padding: 20px;
+        background-color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    .tab-bar {
+        height: 100% !important;
+        .tab-item {
+            display: block !important;
+            width: 100% !important;
+        }
+    }
+}
