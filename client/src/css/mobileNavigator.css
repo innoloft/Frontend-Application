@@ -1,0 +1,91 @@
+.navbar {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.menu-bars {
+   margin-left: 185px;
+   margin-top: 12px;
+   font-size: 2rem;
+   background: none;
+}
+
+.menu-bars1 {
+   color: white;
+   padding: 12px;
+   margin: 5px;
+   margin-right: 10px;
+   border-radius: 5px;
+}
+.nav-menu {
+   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+   background-color: white;
+   color: black;
+   width: 250px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+   left: -100%;
+   transition: 850ms;
+}
+.nav-menu.active {
+   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+   width: 250px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: 450ms;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+a:hover {
+   text-decoration: none;
+}
+.nav-text {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   padding: 8px 0 8px 16px;
+   height: 60px;
+}
+.nav-menu-items {
+   width: 100%;
+}
+.navbar-toggle {
+   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+
+   color: white;
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+@media (max-width: 575px) {
+   .sidebar {
+      display: none;
+   }
+   .createbtn {
+      display: none;
+   }
+   .converterInput {
+      width: 120px;
+   }
+}
+@media (min-width: 575px) {
+   .mobilebar {
+      display: none;
+   }
+   .createbtn2 {
+      display: none;
+   }
+}

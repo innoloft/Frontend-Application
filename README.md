@@ -1,4 +1,5 @@
 ## Instructions
+Time taken till now 4 hrs.
 Please stick to the following instructions on how to submit your application:
 1. Read the whole README
 2. Fork our repository
@@ -32,8 +33,8 @@ It's not required that the main page has any content. **But it should be the def
   - Attributes
 - Description tab should contain product description
 - Attributes tab should contain:
-  - categories (name only, free text input when adding/editing)
-  - business models (name only, free text input when adding/editing)
+  - categories (name only, free text input)
+  - business models (name only, free text input)
   - [TRL](https://en.wikipedia.org/wiki/Technology_readiness_level) (single choice field)
 - User info should contain:
   - user image
@@ -52,8 +53,6 @@ In the task you will need to fetch some data from an API. The API base url is `h
   - PUT `/product/6781/`
 - TRL List
   - GET `/trl/`
-  
-You can also download the [Postman collections](https://api-test.innoloft.com/postman_collection.json).
 
 ## Technical Requirements
 
