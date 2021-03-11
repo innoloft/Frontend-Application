@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint:latest", "tslint-react-hooks", "tslint-config-prettier"],
+  "rules": {
+  "quotemark": [
+            true,
+            "double"
+        ],
+    "no-consecutive-blank-lines": true,
+	"no-submodule-imports": false,
+	"no-angle-bracket-type-assertion": false,
+    "react-hooks-nesting": "error",
+	"react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+	"jsx-wrap-multiline": false,
+	"no-use-before-define": [2, {"functions": true, "classes": true}]
+  }
+}
