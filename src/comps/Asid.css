@@ -1,0 +1,12 @@
+.asid{
+    padding: 100px 30px 50px 200px;
+}
+.asid p{
+    display: flex;
+    align-items: center;
+
+    margin: 20px;
+}
+.asid p span{
+    margin-left: 20px;
+}

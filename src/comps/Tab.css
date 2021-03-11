@@ -1,0 +1,124 @@
+.sction{
+    margin-top: 100px;
+    width: 50vw;
+    margin-left: 120px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.hadr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.hadr button{
+    border: none;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #e2e2e2;
+}
+button:disabled{
+    color: #222;
+    background-color: #fff;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form .outr__div{
+    margin-top: 25px;
+    display: flex;
+    
+    flex-direction: column;
+    
+}
+.innr__div{
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+    font-size: 18px;
+    margin: 0 20px;
+}
+.form-lin{
+    width: 50%;
+    padding: 10px;
+}
+.form button{
+    margin-top: 30px !important;
+    padding: 10px;
+    width: 100px;
+    
+    margin: auto;
+    
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.error{
+    color: tomato !important;
+    margin-left: auto !important;
+    padding-right: 20px;
+}
+.out__form{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.out__form .error{
+    padding-right: 10px;
+}
+.in__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.innr__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innr__form label{
+    margin-left: 10px;
+}
+.form-text{
+    padding: 8px;
+    margin-right: 10px !important;
+}
+.form-textarea,
+.my-select{
+    width: 75%;
+    margin-right: 10px;
+    padding: 10px;
+}
+.outr{
+    flex-direction: column;
+}
+
+.dashboard{
+    margin-top: 80px;
+    background-color: #fff;
+    width: 50vw;
+}
+h1{
+    text-align: center;
+    margin: 10px 0;
+}
+.dashboard ul li{
+    
+    width: 98%;
+    list-style-type: none;
+    padding: 6px;
+    border-bottom: 1px solid rgba(40, 51, 42, 0.333);
+    margin: 5px;
+}
+.bg-light{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+.bg-light a{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+

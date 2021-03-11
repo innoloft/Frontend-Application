@@ -1,0 +1,10 @@
+body{
+    overflow: hidden;
+    background-color: #f1ecec;
+    min-height: 100vh;
+}
+.app__body{
+    display: flex;
+    align-items: flex-start;
+    
+}

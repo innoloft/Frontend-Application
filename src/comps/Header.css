@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #bfec38, #019031);
+    padding: 15px 40px;
+    color: #fff;
+
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.nav ul li{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.nav ul li:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+.spcial{
+    font-size: 18px;
+    margin-left: 6px;
+}
