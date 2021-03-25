@@ -9,25 +9,26 @@ function Product(props){
     const [product, setProduct] = useState(null)
     const [trl, setTrl] = useState(null)
     let productJSON; //will be used to check for changes in data so that POST isn't called without changes 
-    
+
     useEffect(() => {
         if(Object.is(product, null)){
-            axios.get(`https://api-test.innoloft.com/product/6781/`).then(res => {
-                
-                productData = res.data;
-                productJSON = JSON.stringify(res.data);
-                console.log(productData.trl)
-                setProduct(productData)
-            }).catch(err => console.log(err))
+            
         }
 
-        if(Object.is(trl,null)){
-            axios.get(`https://api-test.innoloft.com/trl/`).then(res => {
+        axios.get(`https://api-test.innoloft.com/product/6781/`)
+        .then(res => {
+            productData = res.data;
+            productJSON = JSON.stringify(res.data);
+            
+            setProduct(productData)
+            })
+        .catch(err => console.log(err))
+        
+        axios.get(`https://api-test.innoloft.com/trl/`).then(res => {
                 
                 setTrl(res.data)
             }).catch(err => console.log(err))
-        }
-    })
+    },[])
     
     function handleChange(e){
         
