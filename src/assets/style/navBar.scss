@@ -1,0 +1,49 @@
+@import './size.scss';
+@import './colors.scss';
+
+.navbar-page {
+  .main-nav {
+    padding: 12px 0;
+    background: $white;
+    justify-content: space-between;
+    box-shadow: 00px 20px 20px 00px rgba(0, 0, 0, 0.549);
+
+    .logo {
+          margin: auto auto auto 100px;
+          cursor: pointer;
+          height: 42px;
+    }
+    
+    .nav-links {
+      padding: 03px 00px;
+      float: right;
+      
+      span {
+        color: $blue;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 26.5px 30px;
+        transition: all 1.5s ease;
+
+        .icon {
+          font-size: 16px;
+          margin-right: 03px;
+        }
+      }
+
+      span:hover, .active {
+        color: $white;
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 620px) {
+  .navbar-page {
+    .main-nav {
+      display: none;
+    }
+  }
+}

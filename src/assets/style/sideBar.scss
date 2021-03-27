@@ -1,0 +1,168 @@
+@import './size.scss';
+@import './colors.scss';
+
+.side-bar {
+    top: 0%;
+    left: 0px;
+    z-index: 10;
+    width: 230px;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    transition: 0.5s;
+    font-size: $large;
+    background: $blue;
+    box-shadow: 05px 00px 1px 00px rgba(1, 31, 23, 0.15);
+
+    .side-header {
+        background: $background;
+        padding: 16px 00px 20px 18px;
+        .icon {
+            font-size: $large;
+            cursor: pointer;
+            color: $blue;
+        }
+        
+        .close-icon {
+            position: absolute;
+            right: 25px;
+        }
+    }
+
+    .side-contents {
+        color: $background;
+
+        .profile-picture {
+            border-radius: 50%;
+            position: relative;
+            background: $gray;
+            margin: 00px 20px;
+            overflow:hidden;
+            height: 60px;
+            width: 60px;
+            float: left;
+        
+            img {
+                transform:translate(-0%, -50%);
+                position: absolute;
+                max-width: 100%;
+                height: auto;
+                width: auto;
+                top: 50%;
+            }
+        }
+        
+        .profile-info {
+            grid-template-columns: 1fr;
+            padding-top: 10px;
+            margin-top: 30px;
+            display: grid;
+
+            .profile-name {
+                font-size: 15px;
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+
+            .profile-status {
+                font-size: 13px;
+                margin-left: 20px;
+                position: relative;
+            }
+
+            .profile-status::before {
+                content: '';
+                top: 03px;
+                left: -20px;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border-radius: 50%;
+                background: rgb(87, 230, 87);
+            }
+        }
+
+        .nav-options {
+            margin: 20px 00px 50px 00px;
+
+            .head {
+                font-weight: 900;
+                font-size: $medium;
+                margin: 50px 10px 20px 10px;
+                border-bottom: 1px solid $white;
+            }
+
+            .body {
+                transition: all 1.5s ease;
+                padding: 05px 00px;
+                margin: 00px 00px;
+                cursor: pointer;
+
+                span {
+                    font-size: 14px;
+                    margin: 20px 00px 20px 20px;
+
+                    .icon {
+                        font-size: 13px;
+                        margin-right: 10px;
+                    }
+                }
+
+                span:active {
+                    color: $blueActive;
+                }
+            }
+
+            .footer {
+                border: 1px solid $white;
+                transition: all 1.5s ease;
+                background: $blue;
+                padding: 10px 00px;
+                cursor: pointer;
+                position: fixed;
+                width: 228px;
+                bottom: 0;
+
+                span {
+                    font-size: 15px;
+                    font-weight: 900;
+                    margin: 20px 00px 20px 20px;
+                    
+                    .icon {
+                        font-size: 18px;
+                        margin-right: 50px;
+                    }
+                }
+
+                span:active {
+                    color: $blueActive;
+                }
+            }
+
+            .body:hover, .footer:hover, .active {
+                background: $background;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.hamburger-menu {
+    padding: 15px 20px;
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    left: 0;
+    top: 0;
+
+    .icon {
+        font-size: 30px;
+        color: $gray;
+    }
+    .icon:hover {
+        color: $blue;
+    }
+
+    
+   
+}

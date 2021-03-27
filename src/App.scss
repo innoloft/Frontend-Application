@@ -1,0 +1,57 @@
+@import './assets/style/navBar.scss';
+@import './assets/style/sideBar.scss';
+@import './assets/style/landing.scss';
+@import './assets/style/viewProduct.scss';
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-size: $large;
+  background: $background;
+  font-family: 'Lato', sans-serif;
+}
+
+.Toastify__toast-container {
+  width: 380px;
+  font-size: 12px;
+  font-weight: 900;
+  
+  .Toastify__toast--info {
+    text-align: center;
+    color: rgb(199, 199, 199);
+    background:  $blue;
+  }
+  .Toastify__toast--success {
+    text-align: center;
+    color: rgb(199, 199, 199);
+    background:  $blue;
+  }
+  .Toastify__toast--warning {
+    color: rgb(199, 199, 199);
+    background: $blue;
+  }
+
+  .Toastify__toast--error {
+    text-align: center;
+    color: $background;
+    background: rgb(168, 38, 38);
+  }
+        
+}
+
+.main-loading {
+  background: rgba(50, 49, 53, 0.643);
+  transform: translate(-50%, -50%);
+  position: fixed;
+  padding: 100%;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+
+}
+
+::-webkit-scrollbar { width: 05px; height: 05px; }
+::-webkit-scrollbar-thumb:hover { background: $blueActive; }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 50px $gray;  }
+::-webkit-scrollbar-thumb { background: $blueActive; border-radius: 50px; }
