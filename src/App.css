@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.mainDIv {
+  padding-top: 5rem;
+  border-radius: 7px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+.navigation {
+  margin-top: 3rem;
+  position: fixed;
+  top: 2em;
+  left: 2px;
+  background-color: white;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.productInfo {
+  border-radius: 7px;
+  background-color: white;
+  grid-column: 2;
+}
+.tabContent {
+  border-radius: 7px;
+  background-color: white;
+  grid-column: 2;
+  grid-row: 2;
+}
+.userInfo {
+  border-radius: 7px;
+  background-color: white;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.map {
+  border-radius: 7px;
+  background-color: white;
+  grid-column: 3;
+  grid-row: 2;
+}

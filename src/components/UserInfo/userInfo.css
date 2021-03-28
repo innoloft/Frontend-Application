@@ -1,0 +1,12 @@
+.userImage {
+  height: 10em;
+  width: 10em;
+  border-radius: 15em;
+}
+
+.userInfo {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
