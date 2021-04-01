@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import './sass/abstracts/variables';
+@import './sass/base/base';
+@import './sass/layout/grid';
+
+:root {
+	--select-border: #38aa8f;
+	--select-focus: #e4b302;
+	--select-arrow: var(--select-border);
+}
+
+body {
+	background-color: $color-grey-light-1;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Ubuntu',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: $text-color-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Ubuntu';
+	font-weight: 300;
+	cursor: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $text-color-title;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.6rem;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 2.5rem;
+	white-space: pre-line;
+	word-break: break-word;
+	text-indent: 3rem;
+	padding: 1rem;
+	color: $text-color-dark;
+}
+
+nav,
+section {
+	padding: 2rem;
+	background-color: darken($color-grey-light-2, 1%);
+	border-radius: 4px;
+	margin: 2rem 0;
+	border: 2px solid $color-tertiary;
+}
+
+.card {
+	padding: 1rem;
+	background-color: lighten($color-grey-light-2, 30%);
+	border-radius: 4px;
+	margin: 1rem 0;
+	box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+	cursor: default;
+
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&--active {
+		background-color: $color-grey-light-2;
+		box-shadow: none !important;
+		border-radius: 4px 4px 0 0;
+		transform: translateY(2px);
+	}
+
+	&--tabCard {
+		background-color: $color-grey-light-2;
+		box-shadow: none !important;
+		margin-top: 0;
+	}
+}
+img {
+	object-fit: cover;
+	height: 25rem;
+}
+
+input {
+	background-color: $color-grey-light-2;
+	border: 0;
+	border-top-color: currentcolor;
+	border-right-color: currentcolor;
+	border-bottom-color: currentcolor;
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-left-color: currentcolor;
+	border-bottom: 2px solid #a5a5a5;
+	border-bottom: 2px solid $color-tertiary;
+	letter-spacing: -1px;
+	outline: 0;
+	padding: 0.5em;
+	width: 100%;
+	font-size: 16px;
+}
+
+.button {
+	background-color: lighten($color-tertiary, 100%);
+	border-radius: 4px;
+	border: 2px solid $color-tertiary;
+	box-shadow: inset 0, 1px 0 0 transparent;
+	color: $color-tertiary;
+	display: inline-block;
+	font-weight: 600;
+	margin-right: auto;
+	padding: 8px 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transform: translateY(0);
+	transition: all 0.2s ease-out;
+
+	&:hover {
+		background-color: lighten($color-tertiary, 47%);
+	}
+	&:active {
+		transform: translateY(1px);
+	}
+}
+
+select {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+	z-index: 1;
+
+	&::-ms-expand {
+		display: none;
+	}
+
+	outline: none;
+}
+
+.select {
+	display: grid;
+	grid-template-areas: 'select';
+	align-items: center;
+	position: relative;
+	margin-top: 1rem;
+	select,
+	&::after {
+		grid-area: select;
+	}
+
+	border: 1px solid var(--select-border);
+	border-radius: 4px;
+	padding: 0.5em 1em;
+
+	font-size: 1.25rem;
+	cursor: pointer;
+	line-height: 1.1;
+
+	background-color: #fff;
+	background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+	&:not(.select--multiple)::after {
+		content: '';
+		justify-self: end;
+		width: 0.8em;
+		height: 0.5em;
+		background-color: var(--select-arrow);
+		clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+	}
+}
+option {
+	white-space: normal;
+	outline-color: var(--select-focus);
+}
+
+select:focus + .focus {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	bottom: -1px;
+	border: 2px solid var(--select-focus);
+	border-radius: inherit;
+}
+
+label {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding-bottom: 1rem;
+}
+
+.select + label {
+	margin-top: 2rem;
+}
+
+.scrollable-element {
+	scrollbar-color: $color-primary $color-grey-light-1;
+}

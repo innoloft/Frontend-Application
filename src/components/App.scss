@@ -1,0 +1,156 @@
+@import '../sass/abstracts/variables';
+@import '../sass/abstracts/mixins';
+
+.App > *:not(:first-child) {
+	display: flex;
+	flex-direction: row;
+	height: 90vh;
+}
+
+
+nav {
+	& li {
+		margin-bottom: 2rem;
+		padding: 1rem;
+		transition: all 0.2s ease-in;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: darken($color-grey-light-2, 10%);
+			box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+section {
+	width: 100%;
+	overflow-y: auto;
+}
+
+//TABS
+.tabs {
+	display: flex;
+	flex-direction: column;
+
+	&__content {
+		&--description {
+			overflow-x: auto;
+		}
+
+		&--attributes {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			& > .card {
+				justify-content: flex-start;
+			}
+
+			& p {
+				border-bottom: 1px solid $color-tertiary;
+				padding: 0.6rem 0.5rem 0.2rem;
+				text-indent: 0;
+				text-align: center;
+				border-radius: 4px;
+
+				&:hover {
+					background-color: darken($color-grey-light-2, 10%);
+				}
+			}
+			& h4 {
+				text-align: center;
+				margin-bottom: 1rem;
+				font-weight: 600;
+				color: $text-color-title;
+			}
+			& input {
+				margin: 2rem 0 1rem;
+			}
+
+			& > *:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+
+	&__title {
+		width: 100%;
+		box-shadow: none;
+
+		.card {
+			margin: 0;
+			border-radius: 4px 4px 0 0;
+			box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.103);
+		}
+		& > ul {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex: 1 0 50%;
+			text-align: center;
+		}
+
+		& div {
+			width: 100%;
+			cursor: pointer;
+			transition: all 0.2s ease-in;
+
+			& > div:hover {
+				background-color: darken($color-grey-light-2, 10%);
+			}
+
+			&:not(:last-child) {
+				margin-right: 2.5rem;
+			}
+		}
+	}
+}
+
+.other__info {
+	display: flex;
+	flex-direction: column;
+}
+
+.user {
+	& .card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		& > * {
+			margin-bottom: 1.4rem;
+		}
+	}
+
+	& img {
+		height: 20rem;
+		border-radius: 50%;
+	}
+}
+
+.map {
+	& img {
+		width: 100%;
+	}
+}
+.welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include respond(tab-port){
+		height: 50vh;
+	}
+	
+	& h1 {
+	text-align: center;
+	font-size: 8rem ;
+	@include respond(tab-port){
+		font-size: 6rem ;
+	}
+}
+}

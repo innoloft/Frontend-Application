@@ -1,0 +1,15 @@
+@import '../layout/grid';
+@import '../abstracts/variables';
+
+header {
+	background: $color-primary;
+	border-bottom: 2px solid $color-tertiary;
+}
+
+.header {
+	&__logo > img {
+		margin: 1rem;
+		height: 4rem;
+		width: auto;
+	}
+}
