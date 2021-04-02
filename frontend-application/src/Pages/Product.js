@@ -1,15 +1,28 @@
-import React from "react";
+// import axios from "axios";
+import React, { useEffect } from "react";
 import ProductInfo from "../components/ProductInfo";
 import SideNav from "../components/SideNav";
 import Tabs from "../components/Tabs";
 import User from "../components/User";
 import BackgroundImage from "../image/image.jpeg";
+import { connect } from "react-redux";
+import * as actionCreators from "../action/ProductAction";
 
-class Product extends React.Component {
-  render() {
-    return (
-      <>
-        <div className="product">
+const Product = ({ productData, fetchProducts }) => {
+  // useEffect(() => {
+  //   axios.get("https://api-test.innoloft.com/product/6781/").then((res) => {
+  //     console.log(res)
+  //   });
+  // })
+  useEffect(() => {
+    fetchProducts();
+    console.log(fetchProducts);
+  }, [fetchProducts]);
+
+  return (
+    <>
+      <div className="product">
+        <div className="side_nav">
           <SideNav />
         </div>
         <div
@@ -24,7 +37,7 @@ class Product extends React.Component {
           }}
         ></div>
         <div className="main_info">
-          <ProductInfo Product={this.props.data} />
+          <ProductInfo />
         </div>
         <div className="contents">
           <Tabs />
@@ -33,10 +46,21 @@ class Product extends React.Component {
           <User />
         </div>
         <div className="map"></div>
-      </>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
+const mapStateToProps = (state) => {
+  return {
+    productData: state.products,
+  };
+};
 
-export default Product;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProducts: () => dispatch(actionCreators.fetchProducts()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

@@ -1,25 +1,23 @@
-import React, { Component } from "react";
-import Navbar from "./components/Navbar";
+import React from "react";
+
+import { BrowserRouter, Route } from "react-router-dom";
+
 import Product from "./Pages/Product";
-import { connect } from "react-redux";
-import * as actionCreators from "./action/Index";
+
+import Main from "./Pages/Home";
+import Navbar from "./components/Navbar";
+
+ const App = ({ fetchProducts }) => {
+   return (
+     <BrowserRouter>
+       <div className="App">
+         <Navbar />
+         <Route exact path="/" component={Main} />
+         <Route path="/product" component={Product} />
+       </div>
+     </BrowserRouter>
+   );
+ };
 
 
-class App extends Component {
-  render() {
-    console.log(actionCreators.fetchProducts);
-    return (
-      <div className="App">
-        <Navbar />
-        <Product />
-      </div>
-    );
-  }
-}
-
-const mapStateToProps = (state) => {
-  return state;
-};
-
-
-export default connect(mapStateToProps, actionCreators)(App);
+export default App;

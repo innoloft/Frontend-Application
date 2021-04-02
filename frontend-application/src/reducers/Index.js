@@ -1,20 +1,12 @@
-import { FETCH_DATA } from "../action/Index";
+import { combineReducers } from 'redux'
 
 
-const initState = {
-  products: [],
-};
+import ProductReducer from './ProductReducer copy'
 
-export default function rootReducer(state = initState, action) {
-  switch (action.type) {
-    case FETCH_DATA:
-      return {
-        ...state,
-        data: action.data
-      };
-    default:
-      return state;
-  }
-}
+const rootReducer = combineReducers({
+  product: ProductReducer
+})
+
+export default rootReducer
 
 

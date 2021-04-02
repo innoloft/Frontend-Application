@@ -16,22 +16,42 @@ body {
 nav{
   width: 100%;
   background: purple;
-  padding: 1rem;
+  color: aliceblue;
 }
 
 nav ul{
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  height: 3rem;
 }
 
 nav ul li{
   color: white;
-  display: inline;
-  margin: 0 1rem;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0 2rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+nav ul li:first-child{
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: .8rem 1rem;
+}
+
+.link:hover{
+  background: rgb(156, 44, 156);
+}
+
 
 
 main{
@@ -67,23 +87,25 @@ main h2{
 }
 
 .side_nav ul{
-  list-style: none;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .side_nav ul li{
-  color: white;
-  display: block;
-  margin: 1.5rem 0;
-  cursor: pointer;
-  padding: .7rem 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  padding: 2rem auto;
 }
 
-.side_nav ul li:hover{
-  background: #444;
-  opacity: .8;
+.side_link{
+  text-decoration: none;
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.side_link:hover{
+  background: rgb(156, 44, 156);
 }
 
 .product_img{

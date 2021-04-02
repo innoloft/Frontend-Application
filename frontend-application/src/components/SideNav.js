@@ -1,11 +1,16 @@
 import React from "react";
+import {Link } from 'react-router-dom'
 
 const SideNav = () => {
   return (
     <>
       <ul>
-        <li>home</li>
-        <li>product</li>
+        <Link to="/" className="side_link">
+          Home
+        </Link>
+        <Link to="/product" className="side_link">
+          product
+        </Link>
       </ul>
     </>
   );
