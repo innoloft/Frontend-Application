@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F6F6F6;
+  font-weight: 400;
+}
+
+
+@media (max-width: 420px){
+  body{
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,147 @@
+.sidebar__wrapper{
+  flex-basis: 200px;
+  background-color: #F6F6F6;
+  min-height: 100vh;
+  text-align: left;
+  position: fixed;
+ 
+  display: flex;
+  justify-content: center;
+
+  ul.desktop{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+
+    padding-top: 2rem;
+
+    .links{
+      list-style: none;
+      cursor: pointer;
+      padding: 0 .5rem;
+      width: 200px;
+      border-bottom: 1px solid #dddddd;
+      &:hover{
+        background-color: #afafaf;
+      }
+
+
+      
+      &:not(:last-child){
+        margin-bottom: .5rem;
+      }
+
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        span{
+          display: inline-block;
+          margin-right: 5px;
+          margin-top: 2px;
+        }
+        p{
+          font-size: 12px;
+          font-weight: 400;
+        }
+
+      }
+    }
+   .true{
+      background-color: #262F71;
+    }
+    .true a{
+      color: white;
+    }
+  .false{
+      background-color: transparent;
+    }
+    .false a{
+      color: #262F71
+    }
+  }
+
+  ul.mobile{
+    display: none;
+  }
+  ul.close{
+    display: none;
+  }
+}
+
+
+@media (max-width: 600px){
+  .sidebar__wrapper{
+    flex-basis: 0 !important;
+    background-color: #e6e6e6;
+    min-height: 100vh !important;
+    text-align: left;
+   
+  
+  
+    ul.desktop{
+      display: none;
+    }
+
+    ul.mobile{
+      padding-top: 2rem;
+      position: fixed;
+      display: flex;
+      background-color: #e6e6e6;
+      z-index: 100000;
+      width: 200px;
+      flex-direction: column;
+      margin-left: 10rem;
+      margin-top: 70px;
+      height: 100%;
+      box-shadow: 1px 1px 6px 0 rgba(78, 78, 78, 0.5);
+
+      .links{
+        list-style: none;
+        cursor: pointer;
+        padding: 0 0 .5rem .5rem;
+        width: 95%;
+        border-bottom: 1px solid #dddddd;
+  
+  
+        &:not(:last-child){
+          margin-bottom: .5rem;
+        }
+  
+        a{
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #2b2b2b;
+          span{
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 2px;
+          }
+          p{
+            font-size: 12px;
+            font-weight: 400;
+          }
+  
+        }
+      }
+
+      .true{
+        background-color: #262F71;
+       
+      }
+      .true a{
+        color: white;
+      }
+    .false{
+        background-color: transparent;
+      }
+      .false a{
+        color: #262F71
+      }
+    }
+  }
+  
+  
+}
