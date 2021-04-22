@@ -1,0 +1,111 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+    .product{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .main-content{
+            width: 90%;
+        }
+        &-main-content{
+            width: 100%;
+            min-height: 94.5vh;
+            background: $card-background;
+            img{
+                height: 40vh;
+            }
+        }
+        &-info{
+            margin: 10px auto;
+            display: flex;
+            color: $title-color;
+            h1{
+                font-size: 35px;
+            }
+        }
+        &-text{
+            padding: 0 30px;
+        }
+
+        .tab-list {  
+            border-bottom: 1px solid #ccc;
+            padding-left: 0;
+            text-align:center;
+            margin-top: 30px;
+        }
+        .tab-list-item {
+            display: inline-block;
+            list-style: none;
+            margin-bottom: -1px;
+            padding: 0.5rem 0.75rem;
+            font-size: 1.5rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .tab-list-active {
+            background-color: $card-background;
+            border: solid #ccc;
+            border-width: 1px 1px 0 1px;
+            border-radius: 10px 10px 0 0;
+        }
+        .tab-content{
+            margin-top: 10px;
+        }
+        .attr-card{
+            padding: 25px;
+            margin: 25px;
+            background-color: $background-color;
+            h2{
+                margin-bottom: 10px;
+            }
+            select{
+                width: 50%;
+                height: 25px
+            }
+        }
+        button{
+            margin: 25px;
+        }
+    }
+}
+
+.side-panel{
+    width: 40%;
+    margin-left: 15px;
+    min-height: 100%;
+    padding: 50px 0;
+    .user-card{
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 20px;
+        display: flex;
+        max-height: 30vh;
+        max-width: 400px;
+        .user-image{
+            width: 20%;
+            img{
+                border-radius: 10rem;
+                min-width: 70px;
+            }
+            margin-right: 30px;
+        }
+        .user-info{
+            height:30px;
+            font-size: 18px;
+            p{
+                font-size: 15px;
+                color: rgb(88, 88, 88);
+            }
+        }
+    }
+    .map{
+        margin-top: 25px;
+        width: 100%;
+        max-width: 400px;
+        min-height: 30vh;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
+

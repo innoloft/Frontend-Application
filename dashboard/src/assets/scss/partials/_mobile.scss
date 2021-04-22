@@ -1,0 +1,40 @@
+
+@media(max-width: 1500px) {
+    .side-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin:0 auto;
+        .user-card{
+            flex: 1;
+        }
+        .map{
+            margin-top: 20px;
+        }
+    }
+    .product{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 950px) {
+    .nav{
+        position: absolute;
+        background: $background-color;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media(max-width: 600px) {
+    .tab-list-item {
+        display: inline-block;
+        list-style: none;
+        margin-bottom: -1px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.5rem;
+    }
+}
