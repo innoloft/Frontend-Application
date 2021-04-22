@@ -1,0 +1,123 @@
+$mainColor: #272E71;
+$lightGray: #f6f6f6;
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $lightGray;
+}
+
+span
+{
+  font-size: 12px;
+  color: #828a97;
+}
+
+h1
+{
+  color: $mainColor;
+  font-size: 40px;
+}
+
+p, div
+{
+  font-size: 14px;
+  color: #454d4b;
+}
+
+input, .button, select
+{
+  font-size: 16px;
+  color: #454d4b;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header-wrapper
+{
+  background-color: #e4e2e2;
+}
+
+#header
+{
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#logo
+{
+  height: 30px;
+}
+
+#main-wrapper
+{
+  display: flex;
+  flex: 1 0 auto;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#navbar
+{
+  padding-top: 38px;
+  width: 200px;
+  text-align: left;
+
+  a
+  {
+    font-size: 18px;
+    color: #828a97;
+    padding: 10px 0;
+    padding-left: 15px;
+    text-decoration: none;
+    transition: all .2s ease !important;
+
+    :hover
+    {
+      color: #a5b0c1
+    }
+
+    i
+    {
+      padding-right: 10px;
+    }
+  }
+}
+
+#navbar-content
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard
+{
+  display: flex;
+  flex-grow: 1;
+  width: 0px;
+}
+
+@media only screen and (max-width: 800px)
+{
+  #navbar
+  {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  #dashboard
+  {
+    width: 100%;
+  }
+
+  #main-wrapper
+  {
+    flex-wrap: wrap;
+  }
+}

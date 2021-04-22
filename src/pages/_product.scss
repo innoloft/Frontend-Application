@@ -1,0 +1,241 @@
+@import "../index";
+
+#spinner
+{
+    margin: 0 auto;
+    padding-top: 20%;
+}
+
+#product
+{
+    display: flex;
+}
+
+#half-one, #half-two
+{
+    padding: 15px;
+}
+
+#half-one
+{
+    width: 70%;
+}
+
+#half-two
+{
+    width: 30%;
+}
+
+#first-wrapper, #second-wrapper, #third-wrapper
+{
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 50px -20px rgba(0, 0, 0, .1);
+}
+
+#product-image
+{
+    width: 55%;
+    margin: 0 auto;
+}
+
+#product img
+{
+    width: 100%;
+}
+
+#main-info, #tab-content
+{
+    text-align: left;
+}
+
+#main-info
+{
+    span
+    {
+        border: 1px solid #828a97;
+        padding: 3px 12px;
+        border-radius: 100px;
+    }
+
+    h1 
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        padding-top: 15px;
+    }
+}
+
+.button
+{
+    margin: 0;
+    padding: 10px 15px;
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease !important;
+
+    :hover:not(.inactive)
+    {
+        background-color: #50558B;
+    }
+
+    .inactive
+    {
+        background-color: $lightGray;
+        color: $mainColor;
+        cursor: not-allowed;
+    }
+}
+
+#tab-select
+{
+    display: flex;
+    width: 282px;
+    border-radius: 10px;
+    background-color: $lightGray;
+}
+
+#tab-content
+{
+    padding-top: 40px;
+}
+
+#select-attributes, #select-description
+{
+    width: 50%;
+    margin: 5px;
+}
+
+#content-description
+{
+    line-height: 1.8em;
+}
+
+#attributes
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    div
+    {
+        width: 33.33%;
+    }
+
+    span
+    {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    input, select
+    {
+        border-radius: 10px;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+        width: calc(100% - 45px);
+        border: 0;
+        outline: none;
+        transition: all .2s ease !important;
+    }
+
+    select
+    {
+        width: 100%;
+    }
+
+    input:hover, select:hover
+    {
+        background-color: $lightGray;
+    }
+}
+
+#user-picture
+{
+    width: 50%;
+    margin: 0 auto;
+
+    img
+    {
+        border-radius: 1000px;
+    }
+}
+
+#user-details
+{
+    padding-top: 15px;
+
+    p
+    {
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+#map iframe
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1200px)
+{
+  #half-one, #half-two
+  {
+      width: 100%;
+  }
+
+  #product
+  {
+      flex-wrap: wrap;
+  }
+
+  #third-wrapper
+  {
+      margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  #tab-select, #attributes
+  {
+      flex-wrap: wrap;
+  }
+
+  #tab-select, #select-description, #select-attributes, #attributes div
+  {
+      width: 100%;
+  }
+
+  #attributes div
+  {
+      margin-bottom: 20px;
+  }
+
+  #save
+  {
+      display: flex;
+      margin: 0 auto;
+  }
+
+  #content-attributes
+  {
+      text-align: center;
+  }
+  #first-wrapper
+  {
+      margin-top: 0px;
+  }
+}
+
