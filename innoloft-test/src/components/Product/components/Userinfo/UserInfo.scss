@@ -1,0 +1,54 @@
+.UserInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #454d4b;
+  border: 1px solid #3ab396;
+
+  @media (max-width: 900px) {
+    width: 190px;
+  }
+
+  &__title {
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    color: #3ab396;
+  }
+
+  &__company {
+    height: 2rem;
+
+    & img {
+      height: 100%;
+      @media (max-width: 900px) {
+        height: 60%;
+      }
+    }
+  }
+
+  &__pic {
+    height: 7rem;
+    width: 7rem;
+
+    @media (max-width: 900px) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    & img {
+      border-radius: 50%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    text-align: center;
+
+    @media (max-width: 900px) {
+      & > * {
+        margin: 0;
+      }
+    }
+  }
+}

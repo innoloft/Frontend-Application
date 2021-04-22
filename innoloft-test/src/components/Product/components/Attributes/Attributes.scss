@@ -1,0 +1,81 @@
+.attributes {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+
+  & .blur {
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 98.5vw;
+    z-index: 2;
+  }
+
+  & i {
+    color: #3ab396;
+  }
+
+  & p {
+    display: inline-block;
+    margin: 0.2rem;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 0.5rem;
+    background-color: #ddd;
+  }
+
+  .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .trl h3 {
+      margin: 0.5rem;
+    }
+    .cat {
+      width: 100%;
+    }
+  }
+
+  .right {
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  & select,
+  & input {
+    visibility: hidden;
+    margin-top: 0.5rem;
+    border: 1px solid #3ab396;
+    border-radius: 15px;
+    outline: none;
+    background-color: #fff;
+
+    &.isEdit {
+      visibility: visible;
+    }
+  }
+
+  & select {
+    width: 25%;
+  }
+
+  & input {
+    padding: 0.3rem;
+  }
+}

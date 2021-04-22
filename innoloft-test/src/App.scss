@@ -1,0 +1,64 @@
+.App {
+  color: #454d4b;
+
+  .Header {
+    position: fixed;
+  }
+
+  .content {
+    display: flex;
+    padding-top: 5rem;
+    background-color: #f6f6f6;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  .main {
+    display: flex;
+    width: 80%;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    & > * {
+      margin: 0.5rem;
+    }
+
+    & .loader {
+      margin: auto;
+    }
+
+    .user {
+      background-color: #f6f6f6;
+      width: 35vw;
+
+      @media (max-width: 900px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+
+      & > * {
+        background-color: #fff;
+        margin: 1rem 1rem 0 0.5rem;
+      }
+
+      .UserInfo {
+        height: 50%;
+      }
+
+      .Map {
+        height: 42%;
+
+        @media (max-width: 900px) {
+          height: 190px;
+          width: 190px;
+        }
+      }
+    }
+  }
+}

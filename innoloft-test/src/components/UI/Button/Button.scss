@@ -1,0 +1,54 @@
+.Button {
+  cursor: pointer;
+  outline: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #3ab396;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 1;
+
+  @media screen and (max-width: 1300px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 0.5rem 1.25rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 1.5rem auto 0;
+  }
+
+  &:hover {
+    background-color: #36c5a4;
+    transform: scale(1.025);
+    box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
+  }
+
+  &:active {
+    transform: scale(1);
+    box-shadow: 1px 2px 4px rgba($color: #000000, $alpha: 0.2);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #777;
+
+    &:hover {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  &.invisible {
+    visibility: hidden;
+  }
+}

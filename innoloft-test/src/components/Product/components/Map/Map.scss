@@ -1,0 +1,36 @@
+.Map {
+  height: 318px;
+  border: 1px solid #3ab396;
+
+  &__title {
+    margin: 0.5rem;
+    color: #3ab396;
+  }
+
+  & .Pin {
+    width: 12rem;
+    height: 5rem;
+    position: relative;
+
+    & i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-70%, -90%);
+      font-size: 30px;
+      color: #ffd025;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #3ab39762;
+      backdrop-filter: blur(8px);
+    }
+
+    & p {
+      margin: 0;
+      padding: 5px;
+      background-color: #ddd;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+  }
+}

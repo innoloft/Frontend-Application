@@ -1,0 +1,45 @@
+.Header {
+  height: 2rem;
+  width: 100vw;
+  padding: 1rem;
+  position: relative;
+  z-index: 5;
+
+  &.blue {
+    background-color: #272e71;
+
+    & > svg {
+      &.normal {
+        display: none;
+      }
+
+      &.white {
+        display: block;
+      }
+    }
+  }
+
+  &.white {
+    background-color: #fff;
+    border-bottom: 1px solid #3ab396;
+
+    & > svg {
+      &.normal {
+        display: block;
+      }
+
+      &.white {
+        display: none;
+      }
+    }
+  }
+
+  & > svg {
+    height: 2rem;
+    position: absolute;
+  }
+
+  & img {
+    height: 100%;
+  }
+}
