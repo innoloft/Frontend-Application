@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 5px 8px #777777;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger-menu {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: none;
+}
+
+.header img {
+  height: 50px;
+  background: #929292;
+  padding: 10px;
+}
+
+.app-body {
+  padding-top: 70px;
+  display: flex;
+}
+
+.navbar {
+  width: 20%;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  color: #fff;
+  opacity: 1;
+  max-width: 400px;
+  z-index: 99;
+  box-shadow: 5px 0px 8px #777777;
+  background: #eaeaea;
+  transition: 0.3s;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.navbar ul a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s;
+}
+.selected-page {
+  background: #929292;
+  box-shadow: inset 8px 8px 11px #5d5a5a, inset -8px -8px 11px #b3b3b3;
+  color: white !important;
+}
+
+.home-page,
+.product-page {
+  width: 100%;
+  margin-left: 23%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.product {
+  display: flex;
+  margin-top: 30px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-info span {
+  font-size: 30px;
+  font-weight: 600;
+}
+.product-picture {
+  height: 250px;
+  width: 350px;
+  margin-right: 40px;
+  box-shadow: 0 0 8px 1px #c1b8b8;
+  padding: 10px;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+.tab-content {
+  margin-top: 40px;
+  padding: 10px;
+}
+.buttons {
+  width: fit-content;
+  border-radius: 10px 10px 0 0;
+}
+.buttons button {
+  padding: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;
+  outline: none;
+  font-weight: 600;
+  box-shadow: -1px -3px 8px 0px #c1b8b8c4;
+  cursor: pointer;
+  margin-right: 3px;
+  transition: 0.3s;
+}
+.selected {
+  color: white;
+  background: #272e71 !important;
+  box-shadow: none !important;
+  transition: 0.3s;
+  box-shadow: inset 8px 8px 11px #191c42, inset -8px -8px 11px #4c6c96 !important;
+}
+.attributes-tab,
+.description-tab {
+  box-shadow: 0 0 8px 1px #c1b8b8;
+  padding: 15px;
+  border-radius: 0 10px 10px 10px;
+  background: #eaeaea;
+}
+.categories,
+.business-models,
+.trl {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #92929299;
+}
+.attributes-tab button {
+  border: none;
+  outline: none;
+  padding: 10px;
+
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 6px gray;
+}
+.attributes-tab button:active {
+  transform: translatey(2px);
+}
+
+select,
+input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 8px 8px 11px #c5c2c2, inset -8px -8px 11px white;
+  box-shadow: inset 8px 8px 11px #c5c2c2, inset -8px -8px 11px white;
+  padding: 10px;
+  background: none;
+  margin-bottom: 30px;
+  color: #757575;
+  transition: 0.3s;
+}
+select:focus,
+input:focus {
+  box-shadow: 0 0 5px 3px #272e71;
+}
+h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.info-and-map {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.user-info {
+  height: 250px;
+  box-shadow: 0 0 8px 1px #c1b8b8;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #eaeaea;
+  margin-bottom: 40px;
+}
+.user-info svg,
+.user-info img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 11px 11px 20px #c5c2c2;
+  border: 5px solid #929292;
+  margin-bottom: 30px;
+  color: #929292;
+}
+
+.google-map {
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 8px 1px #c1b8b8;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger-menu {
+    display: block;
+    margin-right: 20px;
+  }
+  .navbar {
+    width: fit-content;
+  }
+  .hidden {
+    transform: translateX(-500px);
+  }
+  .app-body {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .product-page {
+    margin: 0;
+  }
+  .product {
+    display: block;
+  }
+  .product img {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .info-and-map {
+    margin-right: 0;
+  }
+}
