@@ -1,0 +1,24 @@
+.navigation__tab .page__link{
+    color: #828a97;
+ }
+ .section.navigation__section {
+     position: unset; 
+ }
+ @media(min-width: 768px) {
+    section .navigation__section {
+        position: fixed;
+    } 
+ 
+     .navigation__tab {
+         &:first-of-type {
+             margin-top: 1.5rem;
+         }
+         margin-bottom: 2rem;
+     }
+ }
+ 
+ @media(min-width: 1114px) {
+     .navigation__section {
+         position: fixed;
+     }
+ }

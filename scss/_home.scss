@@ -1,0 +1,22 @@
+.intro_Intro__2qAVQ {
+    text-align: center;
+    max-width: 980px;
+    margin: auto;
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    p {
+        font-family: Open Sans, sans-serif;
+        line-height: 2.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1114px) {
+    .intro_Intro__2qAVQ {
+        text-align: unset;
+    }
+}

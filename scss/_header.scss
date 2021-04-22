@@ -1,0 +1,21 @@
+header {
+    background-color: #272e71;
+}
+
+.header_container {
+    padding: 16px;
+    img {
+        height: calc(100% - 20px);
+        margin-right: 20px;
+        max-width: 180px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media(min-width: 768px) {
+    header { 
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+    }
+}
