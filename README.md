@@ -1,3 +1,6 @@
+## Notes
+Please the TRL and configuration had a CORS errors which can only be solved from the backend
+
 ## Instructions
 Please stick to the following instructions on how to submit your application:
 1. Read the **whole** README
