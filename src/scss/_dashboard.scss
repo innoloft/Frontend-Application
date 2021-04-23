@@ -1,0 +1,16 @@
+.main-dashboard{
+    width: 100%;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 20px;
+    height: max-content;
+    padding: 40px 0;
+
+    @media screen and (max-width: 1024px) {
+        grid-gap: 0px;
+        grid-template-columns: 1fr;
+    }
+}

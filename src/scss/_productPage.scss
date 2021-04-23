@@ -1,0 +1,176 @@
+.product-page-wrapper{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        grid-row-gap: 20px;
+    }
+
+    .left{
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-gap: 10px;
+
+        .tab{
+            cursor: pointer;
+            transition: all .25s ease;
+            height: 40px;
+            align-self: center;
+            text-align: center;
+            &:hover{
+                background: #DDD;
+            }
+
+            &.active{
+                background: #272e71;
+                color: #FFF;
+            }
+
+        }
+
+        .product-image{
+            grid-row: span 3;
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+        }
+        .product-main-info{
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 2;
+            height: 100px;
+            .product-name{
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+            
+        }
+        .tab-content{
+            grid-row: span 3;
+            grid-column: span 2;
+            display: unset;
+            font-size: .75rem;
+            height: 250px;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+
+            &::-webkit-scrollbar { 
+                display: none;
+            }
+            .description{
+                line-height: 1.6;
+            }
+
+            .attributes-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                .attribute{
+                    width: max-content;
+                    padding: 4.8px 18px;
+                    margin-left: 5px;
+                    margin-bottom: 5px;
+                    border-radius: 20px;
+                    border: 1px solid #DDD;
+                }
+
+            }
+
+            .attributes-tab{
+                position: relative;
+                height: 100%;
+
+                .edit-btn{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    span{
+                        margin-left: 10px;
+                        cursor: pointer;
+                        user-select: none;
+                    }
+                }
+
+                .attributes-container{
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    .att-rows{
+                        margin: 5px 0;
+                    }
+                    p{
+                        margin-bottom: 5px;
+                        font-weight: 700;
+                    }
+                    input, select{
+                        padding: 4.8px 18px;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        border: 1px solid #DDD;
+                        font-size: .75rem;
+                        font-family: inherit;
+                    }
+
+                }
+
+            }
+            
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .user-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 350px;
+            width: 100%;
+
+            img{
+                height: 7em;
+                width: 7em;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+            .name{
+                font-weight: bold;
+            }
+            p{
+                line-height: 1.4;
+                text-align: center;
+            }
+        }
+
+        .map{
+            height: 350px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
+
+.card{
+    background: #FFF;
+    box-shadow: 1px 1px 6px 0 rgb(0 0 0 / 10%);
+    padding: 10px;
+    border-radius: 5px;
+}
