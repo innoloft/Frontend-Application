@@ -1,0 +1,38 @@
+.description__details {
+	display: flex;
+}
+
+.description__details > div {
+	background-color: rgb(241, 239, 239);
+	color: rgb(141, 141, 141);
+	font-size: 20pt;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.description__details > div:hover,
+div.active {
+	background-color: rgb(39, 46, 113);
+	color: white;
+}
+
+.description__attribute {
+	padding: 15px 15px 30px;
+}
+
+@media screen and (max-width: 480px) {
+	.description__attribute {
+		padding-bottom: 40px;
+		font-size: 10pt;
+		font-weight: lighter;
+	}
+
+	.description__details > div {
+		font-size: 12pt;
+	}
+}

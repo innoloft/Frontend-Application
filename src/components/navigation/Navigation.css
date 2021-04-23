@@ -1,0 +1,34 @@
+.nav {
+	height: 40px;
+	background-color: darkgray;
+	text-align: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.app-body {
+	display: flex;
+	flex: 5;
+}
+
+.app-body__sidebar {
+	flex: 1;
+	background-color: gray;
+}
+
+.app-body__page {
+	flex: 4;
+	background-color: white;
+}
+
+.logo {
+	height: 35px;
+	filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 480px) {
+	.app-body__page {
+		flex: 1;
+		max-width: 100vw;
+	}
+}

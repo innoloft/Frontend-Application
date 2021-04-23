@@ -1,0 +1,28 @@
+.navigation {
+	display: flex;
+	flex-direction: column;
+	width: 120px;
+	background-color: gray;
+	overflow-y: visible;
+	min-height: 100vh;
+	padding-top: 20px;
+}
+
+.navigation__link {
+	font-size: medium;
+	margin-bottom: 5px;
+	padding: 8px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation__link:hover {
+	background-color: black;
+	color: white;
+}
+
+@media screen and (max-width: 480px) {
+	.navigation {
+		display: none;
+	}
+}
