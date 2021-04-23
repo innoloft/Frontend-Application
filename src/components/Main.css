@@ -1,0 +1,35 @@
+.Main {
+  display: flex;
+  margin-top: 50px;
+}
+
+.Sidebar {
+  flex: 0 0 20%;
+}
+
+.User {
+  flex: 0 0 60%;
+  background-color: #fff;
+  height: 80vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .Main {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .User {
+    flex: 0 0 90vw;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .Sidebar {
+    margin-top: 10px;
+  }
+
+  .User {
+    margin-top: 10px;
+  }
+}

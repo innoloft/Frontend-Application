@@ -1,0 +1,110 @@
+.Container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.Form {
+  margin-top: 50px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+  text-align: start;
+}
+
+[type="text"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+select {
+  background: #e8eeef !important;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+[type="text"]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #1e6bd6;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==)
+    100% no-repeat;
+  line-height: 1;
+}
+
+[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #1e6bd6;
+  border-radius: 2px;
+  background: #1e6bd6;
+  width: 50%;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  background-color: #add8e6;
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.625em;
+  display: relative;
+}
+
+@media only screen and (max-width: 612px) {
+  label {
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  [type="text"] {
+    font-size: 10px;
+  }
+
+  select {
+    font-size: 10px;
+  }
+  [type="submit"] {
+    font-weight: 300;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+  }
+}
