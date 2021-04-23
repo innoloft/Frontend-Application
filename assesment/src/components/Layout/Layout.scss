@@ -1,0 +1,20 @@
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "s s s c c c c c c c c c";
+  & .site__content {
+    grid-area: c;
+    background: #eee;
+    padding: 20px;
+    overflow: scroll;
+    & .ccc{
+        height: 300px;
+        background: red;
+        margin-bottom: 10px;
+    }
+  }
+}

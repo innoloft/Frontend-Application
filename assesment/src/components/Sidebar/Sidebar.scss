@@ -1,0 +1,15 @@
+.side__bar {
+  background: #272e71;
+  color: white;
+  padding-top: 15px;
+  grid-area: s ;
+  & a {
+    display: block;
+    padding: 15px;
+    &.active {
+      background: #f0f07e;
+      font-weight: bold;
+      color: #272e71;
+    }
+  }
+}
