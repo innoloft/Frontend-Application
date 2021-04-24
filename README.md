@@ -1,8 +1,7 @@
 ## Task Done
-- Finish in about 8 hours
-- Follow strictly to the requirements
+- Finished in about 8 hours
 
-==========================================================================================================================================================================================
+===================================================================================================
 
 ## Instructions
 Please stick to the following instructions on how to submit your application:
