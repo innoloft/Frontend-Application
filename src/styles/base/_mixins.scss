@@ -1,0 +1,83 @@
+@mixin anchor_tag {
+    text-decoration: none;
+    color: #000;
+}
+
+@mixin card {
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1px);
+    margin: 10px;
+//    border-bottom: 4px solid #272e71;
+}
+
+
+@mixin app-container {
+    max-width: 148rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@mixin tab {
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.1px);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@mixin flex-box($direction:row, $justify-content:center, $align-items: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+@mixin full-width($width: 100%, $max: 100%) {
+    width: $width;
+    max-width: $max;
+}
+
+/// Shorthand mixin for offset positioning
+/// @param {String} $position - Either `relative`, `absolute` or `fixed`
+/// @param {Length} $top [null] - Top offset
+/// @param {Length} $right [null] - Right offset
+/// @param {Length} $bottom [null] - Bottom offset
+/// @param {Length} $left [null] - Left offset
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+/// Shorthand mixin for absolute positioning
+/// Serves as an alias for `position(absolute, ...)`
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} position
+@mixin absolute($args...) {
+    @include position(absolute, $args...);
+}
+  
+/// Shorthand mixin for relative positioning
+/// Serves as an alias for `position(relative, ...)`
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} position
+@mixin relative($args...) {
+    @include position(relative, $args...);
+}
+
+/// Shorthand mixin for fixed positioning
+/// Serves as an alias for `position(fixed, ...)`
+/// @param {Arglist} $args - Offsets
+/// @require {mixin} position
+@mixin fixed($args...) {
+    @include position(fixed, $args...);
+}

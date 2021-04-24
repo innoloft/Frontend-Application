@@ -1,0 +1,26 @@
+.main-section {
+    @include flex-box(null, null, null);
+    @include app-container;
+    height: 100%;
+}
+
+.main-container{
+    @include flex-box(null, null, null);
+    width: 100%;
+    margin-left: 3rem;
+    padding-top: 5rem;
+}
+
+.grid-container{
+    height: 100%;
+}
+
+
+/*Media Queries (1024px)*/ 
+
+@media screen and (max-width: $breakpoint-med) {
+    .main-container {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}

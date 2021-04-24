@@ -1,0 +1,52 @@
+.header-section{
+    @include fixed(left= 0, top= 0);
+
+    background: $main-color;
+    color: white;
+    margin-bottom: 0;
+    padding: 5px;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-nav {
+    @include flex-box(null, null, null);
+    height: 44.5px;
+}
+
+.mobile-hamburger{
+    display: none !important;
+}
+
+.header-container {
+    @include app-container;
+    
+    &__main-header {
+        &__menu-hamburger {
+            @include flex-box(row, center, center);
+        }
+        &__brand-logo {
+            @include flex-box(row, center, center);
+
+            margin-left: 15px;
+            img {
+                max-width: 140px;
+                height: 50px;
+            }
+        }   
+    }
+}
+
+/*Media Queries (1024px)*/ 
+
+@media screen and (max-width: $breakpoint-med) {
+    .mobile-hamburger{
+        display: flex !important;
+        margin: 0 5px 0 10px;
+        img {
+            cursor: pointer;
+        }
+    }
+
+}
