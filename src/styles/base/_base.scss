@@ -1,0 +1,23 @@
+body, html{
+    font-style: Helvetica,Arial,sans-serif;
+    background-color: #f6f6f6;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+button {
+    cursor:pointer;
+}
+
+
+#root{
+    height: 100%;
+}
+
+
+//Colors
+$main-color :#272e71;
+$primary-color: #f6f6f6;
+$secondary-color: #fff;
+
