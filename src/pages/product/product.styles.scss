@@ -1,0 +1,27 @@
+.product-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .product-container {
+        padding: 8px;
+        width: 60%;
+
+        .card {
+            position: relative;
+        }
+    }
+
+    .user-container {
+        padding: 8px;
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-page {
+        .product-container {
+            width: 100%;       
+        }
+    }
+}

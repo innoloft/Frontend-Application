@@ -1,0 +1,31 @@
+.tab-content {
+    border: 1px solid lightgray;
+    padding: 15px;
+    background: #f6f6f6;
+    text-align: justify;
+    position: relative;
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-top: 1px solid lightgray;
+    padding: 8px 8px 0 8px;
+
+    .edit-btn {
+        background: transparent;
+        border: none;
+        right: 8px;
+        top: 16px;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 6px;
+    }
+}

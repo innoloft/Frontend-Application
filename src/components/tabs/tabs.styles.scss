@@ -1,0 +1,15 @@
+.tabs {
+    .tab-nav {
+        span {
+            padding: 8px;
+            display: inline-block;
+            border: 1px solid lightgray;
+            cursor: pointer;
+            margin-right: 2px;
+            border-bottom: none;
+        }
+        span.active {
+            background: #f6f6f6;
+        }
+    }
+}

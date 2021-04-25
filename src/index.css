@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f6f6f6;
+  font-size: 15px;
+  color: #445063;
+}
+
+* {
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul, h6, p {
+  margin-bottom: 8px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px 0 rgb(0 0 0 / 20%);
+}
+
+
+
+

@@ -1,0 +1,31 @@
+.product-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 24px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border-top-right-radius: 20px;
+
+    .product-name {
+        font-size: 30px;
+    }
+
+    .product-type {
+        font-size: 12px;
+        display: inline-block;
+        border: 1px solid white;
+        padding: 4px 8px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-info {
+        padding: 16px;
+
+        .product-name {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,3 +1,45 @@
+Live Demo is available at [Innoloft Dashboard](https://compassionate-brattain-14c31a.netlify.app/)
+
+I started this assignment a week ago, and spent 30 to 90 minutes each day. So approximately it took 6-8 hours. I enjoyed building the dashboard as per detailed requirements given.  
+
+App has been created using CRA, so after clone and checkout just run `npm i` and `npm start` to run the app locally
+
+Completed all the requirement, listed below
+
+- Used React.js framework
+- redux for state management
+- Thunk for async requests
+- Header, Dashboard, Sidebar and other UI has been made to resemble Innoloft where ever possible
+- Product page to show all the the info as requested in requirements (API integration with Fetch)
+- Attributes tab with edit functionality
+- Used own styling classes to structure and render UI using SCSS
+- Responsive dashboard (usable on desktop, mobile and tablets screen sizes)
+- Google map showing company address (Bonus)
+- White-labeling, .env file config (Bonus)
+
+Some screen shots for quick preview -
+
+![captured (1)](https://user-images.githubusercontent.com/22868164/112859904-ee448f80-90d0-11eb-9a4b-ad10d7597fdb.gif)
+
+
+![image](https://user-images.githubusercontent.com/22868164/112857013-0a92fd00-90ce-11eb-8e1b-6e082bdd8ab7.png)
+
+![image](https://user-images.githubusercontent.com/22868164/112857216-40d07c80-90ce-11eb-9e02-15aed91e1ab3.png)
+
+![image](https://user-images.githubusercontent.com/22868164/112857323-5b0a5a80-90ce-11eb-8710-10d344be9b5a.png)
+
+![image](https://user-images.githubusercontent.com/22868164/112857497-8ab96280-90ce-11eb-86eb-74d919cbf996.png)
+
+
+
+
+
+
+
+
+
+
+---------------------------------
 ## Instructions
 Please stick to the following instructions on how to submit your application:
 1. Read the **whole** README

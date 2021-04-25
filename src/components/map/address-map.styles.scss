@@ -1,0 +1,15 @@
+.map {
+    height: 400px;
+}
+
+.marker {
+    display: flex;
+    align-items: center;
+
+    .text {
+        background: rgba(0,0,0,0.5);
+        padding: 4px;
+        width: 90px;
+        color: white;
+    }
+}

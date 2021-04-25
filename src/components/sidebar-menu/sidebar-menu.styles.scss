@@ -1,0 +1,43 @@
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid lightgray;
+    position: fixed;
+    padding-top: 66px;
+    left: 0;
+    background: #f6f6f6;
+    height: 100%;
+    transition: all 0.1s ease;
+    z-index: 999;
+    
+    .page-link {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #212529;
+        transition: all 0.2s ease;
+
+        span {
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+
+    .page-link:hover {
+        background: #ddd;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        padding: 0;
+        padding-top: 66px;
+
+        &.open {
+            width: 200px;
+            overflow: initial;
+        }
+    }
+}
