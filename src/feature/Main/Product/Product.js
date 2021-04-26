@@ -52,7 +52,7 @@ function Product() {
                   {config.hasUserSection && (
                     <ProductUserInfo isMobile={isMobile} user={product.user} company={product.company} />
                   )}
-                  <ProductMap hasUserSection={config.hasUserSection} isMobile={isMobile} lat={product.company.address.latitude} lng={product.company.address.longitude} />
+                  <ProductMap hasUserSection={config.hasUserSection} isMobile={isMobile} address={product.company.address} />
                 </div>
             </div>
         )}

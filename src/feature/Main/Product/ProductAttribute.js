@@ -119,14 +119,15 @@ function ProductAttribute(props) {
                     TRL :
                 </div>
                 <div style={{width: props.isMobile ? '60%' :  '80%'}}>
-                    {edit && trlOption && trlOption.map((item, index) => {
-                        return(
-                            <div key={index}>
-                                <input type="radio" id={index} name="trl" value={item.id} checked={item.id == trl.id} onChange={onChangeTrl}/>
-                                <label>{item.name}</label><br/>
-                            </div>
-                        )
-                    })}
+                    {edit && trlOption && (
+                        <select name="trl" id="trl" value={trl.id} onChange={onChangeTrl}>
+                            {trlOption.map((item, index) => {
+                                return (
+                                    <option key={index} value={item.id}>{item.name}</option>
+                                )
+                            })}
+                        </select>
+                    )}
                     {!edit && (
                         <div>{trl.name}</div>
                         

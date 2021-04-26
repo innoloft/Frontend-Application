@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
+import parse from 'html-react-parser';
 
 function ProductDescription(props) {
 
   return (
     <Fragment>
-        <div dangerouslySetInnerHTML={{__html: props.desc}} />
+        {parse(props.desc)}
     </Fragment>
   );
 }
