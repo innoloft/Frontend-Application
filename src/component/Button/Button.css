@@ -1,0 +1,16 @@
+.button {
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.button:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
