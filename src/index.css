@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.page-general-color {
+  background-color: #133280;
+}
+
+.switch-section {
+  position: fixed;
+  right: 0;
+  width: 85%;
+  background-color: #F6F6F6;
+  border-left: 5px solid #fff;
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.toggle-side-bar {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  padding-top: 5px;
+}
+
+.hide-navbar-icon {
+  display: none;
+}
+
+.test-class {
+  background-color: red;
+  z-index: 30;
+}
+
+@media only screen and (max-width: 1128px) {
+  .switch-section {
+    left: 0;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .switch-section {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,50 @@
+
+.company-address-header {
+  background-color: #143280;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.company-address-data {
+  padding: 10px;
+  background-color: #dfdfdf;
+}
+
+.company-address-data .align-data {
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #666;
+  display: flex;
+}
+
+.company-address-data span {
+    margin-left: 20px;
+}
+
+.align-data-info {
+    flex: 1;
+    color: #444;
+}
+
+.align-data-label {
+    width: 90px;
+}
+
+.update-button-section button {
+  background-color: #444;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  outline: none;
+}

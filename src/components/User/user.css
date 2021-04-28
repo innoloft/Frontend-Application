@@ -1,0 +1,65 @@
+.user-details-section {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.user-position-section {
+  background-color: #143280;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-information-section {
+  background-color: #888;
+  margin-bottom: 10px;
+  font-size: 13.5px;
+  display: flex;
+}
+
+.left-user-information-section {
+  flex: 1;
+}
+
+.right-user-information-section {
+  background-color: #143280;
+}
+
+.right-user-information-section img {
+  width: 150px;
+  height: 150px;
+}
+
+.firstname-section,
+.lastname-section,
+.email-section,
+.gender-section {
+  background-color: #777;
+  padding: 9px 10px;
+  margin-bottom: 5px;
+}
+
+.firstname-section span,
+.lastname-section span,
+.email-section span,
+.gender-section span {
+  margin-right: 10px;
+  color: lightgray;
+}
+
+@media only screen and (max-width: 400px) {
+  .user-information-section {
+    flex-direction: column;
+  }
+
+  .left-user-information-section {
+    order: 2;
+  }
+
+  .right-user-information-section {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+}

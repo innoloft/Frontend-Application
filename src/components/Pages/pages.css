@@ -1,0 +1,73 @@
+.attributes-section {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.business-category-section {
+  display: flex;
+}
+
+.categories-section,
+.business-models-section {
+  flex: 1;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.categories-header,
+.business-modal-header {
+  padding: 10px;
+  background-color: #143280;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+.categories-data-section,
+.business-data-section {
+  height: 140px;
+  background-color: #DFDFDF;
+  overflow-y: auto;
+  margin: 5px;
+  scroll-behavior: smooth;
+  font-size: 13.5px;
+  color: #888;
+}
+
+.categories-data-section::-webkit-scrollbar,
+.business-data-section::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.category-display-section {
+  padding: 10px;
+  background-color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.trl-section {
+  margin: 5px;
+  background-color: #dfdfdf;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.description-details {
+  padding: 10px;
+  color: #444;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.description-details img {
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 550px) {
+  .business-category-section{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,24 @@
+.navbar-section {
+  padding: 5px 10px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.navbar-section .logo-section img {
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.navbar-section .user-profile-section {
+  margin-left: auto;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
