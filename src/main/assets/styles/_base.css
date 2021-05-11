@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: goldenplains;
+    src: url("../fonts/GoldenPlainsDemo.ttf");
+}
+
+@font-face {
+    font-family: marcellus;
+    src: url("../fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+    font-family: helvet;
+    src: url("../fonts/Helvetica-Font/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: helvetbold;
+    src: url("../fonts/Helvetica-Font/Helvetica-Bold.ttf");
+}
+
+@font-face {
+    font-family: helvetboldob;
+    src: url("../fonts/Helvetica-Font/Helvetica-BoldOblique.ttf");
+}
+
+@font-face {
+    font-family: helvetlight;
+    src: url("../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
+}
+
+@font-face {
+    font-family: helvetoblique;
+    src: url("../fonts/Helvetica-Font/Helvetica-Oblique.ttf");
+}
+
+@font-face {
+    font-family: helvetultra;
+    src: url("../fonts//Helvetica-Font/HelveticaUltraLt.ttf");
+}

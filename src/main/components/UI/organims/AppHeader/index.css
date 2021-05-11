@@ -1,0 +1,61 @@
+.appheader {
+    --appheader-logo-h: 1.6425rem;
+    --appheader-logo-w: 8.75rem;
+    --appheader-padding: 0 1rem;
+    height: var(--app-header-h);
+    background-color: var(--app-default-color);
+    width: 100%;
+    padding: var(--appheader-padding);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.appheader-inner {
+    max-width: var(--app-max-width);
+    width: 100%;
+    display: flex;
+    background-color: var(--app-default-color);
+    align-items: center;
+    height: 100%;
+}
+
+.appheader-logo {
+    width: var(--appheader-logo-w);
+    height: var(--appheader-logo-w);
+}
+
+.appheader-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.appheader-hamburger {
+    display: none;
+}
+
+.appheader-hamcont {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 745px) {
+    .appheader {
+        --appheader-logo-h: 1.3125rem;
+        --appheader-logo-w: 5rem;
+        --appheader-padding: 0 1rem;
+    }
+
+    .appheader-hamburger {
+        display: block;
+        height: 1.3125rem;
+        width: 1.3125rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+}

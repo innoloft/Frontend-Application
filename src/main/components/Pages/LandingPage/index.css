@@ -1,0 +1,14 @@
+.ldpg {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ldpg-button {
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: lightblue;
+    cursor: pointer;
+}

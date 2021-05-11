@@ -1,0 +1,22 @@
+.sidnav {
+    position: sticky;
+    top: var(--app-header-h);
+}
+
+.sidnav-ul {
+    list-style: none;
+}
+
+.sidnav-li {
+    height: 2.5rem;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    padding-left: 1rem;
+}
+
+.sidnav-li:hover {
+    background-color: var(--color-alto);
+}
