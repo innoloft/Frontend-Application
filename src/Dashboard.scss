@@ -1,0 +1,64 @@
+.dash-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  //position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  .wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    height: calc(100% - 60px);
+    padding: 50px 100px;
+    width: 100%;
+
+  }
+
+  @media screen and (orientation: portrait) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+  @media screen and (orientation: portrait) and (max-width: 767px) {
+    .wrapper {
+      padding: 0;
+    }
+
+  }
+  @media screen and (orientation: portrait) and (max-width: 599px) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+  @media screen and (orientation: portrait) and (max-width: 320px) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+  @media screen and (orientation: landscape) and (max-width: 640px) {
+    .wrapper {
+      padding: 0;
+    }
+  }
+
+}
+
+
+

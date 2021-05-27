@@ -1,0 +1,9 @@
+@import "./assets/css/variables";
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background: $greyColor;
+}
+strong {
+  font-weight: 800;
+}

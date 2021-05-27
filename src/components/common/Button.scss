@@ -1,0 +1,23 @@
+@import "./../../assets/css/variables";
+.simple-button {
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    background-color: $themColor;
+    border: none;
+    width: 120px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+    font-size: 16px;
+}
+
+.simple-button:hover{
+    box-shadow:0px 2px 10px 5px rgba(2, 117, 216, 0.42);
+}
+

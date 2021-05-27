@@ -1,0 +1,15 @@
+.page {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (orientation: portrait) {
+  .page {
+    height: calc(100% - 100px);
+  }
+}
+
+
+
