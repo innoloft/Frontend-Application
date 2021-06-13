@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
+body{
+  padding:0;
+  margin:0;
+}
+.container {
+  padding:1em;
+  font-family: "Kiwi Maru";
+  height: 100%;
+
+}
+#logo {
+  height: 1.9em;
+  padding: 0.2em;
+  margin:0 0 0.5em 1.4em;
+  border-bottom: 0.1em solid #007580;
+}
+.main-aria {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 0.1em solid #007580;
+}
+.main-aria > div {
+  padding: 1em;
+}
+.navigation-c {
+  width: 10em;
+}
+.navigation-c > div {
+  width: 8em;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.navigation-c > div:hover{
+  background-color: #daebec;
+}
+.n-main {
+  border: 0.1em solid #007580;
+  display: flex;
+}
+.n-products {
+  border: 0.1em solid #007580;
+  margin-top: 0.3em;
+  display: flex;
+}
+.product-c {
+  width: 100%;
+  display: block;
+
+}
+.p-image {
+  border: 0.1em solid #007580;
+  width: 100%;
+
+  height: 10em;
+}
+.p-info {
+  border: 0.1em solid #007580;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.p-info > span {
+  margin: 0.1em 0.3em;;
+}
+.tabs {
+  width: 100.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2.5em;
+  padding: 0.2em 0;
+}
+.tabs > button {
+  margin: 0.2em 0;
+  cursor: pointer;
+  font-size: 1em;
+  color: #038692;
+  font-weight: 550;
+  
+}
+.tabs > button:hover{
+  background-color:  #b98f12;
+}
+.desc-t {
+  border: 0.1em solid #282846;
+  background-color: #fed049;
+
+  flex-grow: 1;
+}
+.atrb-t {
+  border: 0.1em solid #282846;
+  background-color: #fed049;
+  flex-grow: 1;
+}
+.t-content {
+  border: 0.1em solid #007580;
+  display: block;
+  width: 99%;
+  height: fit-content;
+  overflow: hidden;
+   height: 20em;
+  padding: 0.3em;
+  font-size: 0.9em;
+}
+#atribute-content >div {
+  margin-top: 2em;
+  width:50%;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+#atribute-content >div>label {
+  margin-bottom: 0.5em;
+}
+.user-c {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+.user-info {
+  border: 0.1em solid #007580;
+  height: 20em;
+  flex-grow: 1;
+
+
+
+}
+.user-info > img {
+  width: 100%;
+  height: 10em;
+  border: 0.1em solid #007580;
+}
+.user-info > p{
+  width: 60%;
+  margin-left: 0.2em;
+  border-bottom: 0.1em solid #007580;
+}
+#map {
+  width: 18em;
+  height: 19em;
+  border: 0.1em solid #007580;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-aria {
+    flex-direction: column;
+  }
+  .navigation-c{
+    display: flex;
+    flex-direction: row;
+
+  }
+ 
+  .navigation-c > div {
+   margin:1em;
+  }
+
+ .main-aria >div{
+   width: 90%;
+ }
+ .main-aria{
+   height: 100%;
+   width: 100%;
+
+ }
+ .user-info {
+  height: 20em;
+
+}
+}
