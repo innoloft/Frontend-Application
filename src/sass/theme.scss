@@ -1,0 +1,64 @@
+@use './variables' as *;
+
+:root {
+  --brand-primary: #282e71;
+  --brand-white: #fff;
+  --app-background: #f4f4f4;
+  --border: rgba(0, 0, 0, 0.12);
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--app-background);
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  @media only screen {
+    @media (min-width: $desktop-min) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+      width: 960px;
+    }
+    @media (min-width: $wide-min) and (max-width: $wide-max) {
+      width: 1152px;
+    }
+    @media (min-width: $fhd-min) {
+      width: 1344px;
+    }
+  }
+}
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-direction: row;
+
+  @media only screen and (max-width: $mobile-max) {
+    flex-direction: column;
+  }
+
+  > * {
+    flex: 1 0 auto;
+  }
+}

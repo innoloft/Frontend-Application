@@ -1,0 +1,7 @@
+@function removeUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($size) {
+  @return #{removeUnit($size) / 16}rem;
+}

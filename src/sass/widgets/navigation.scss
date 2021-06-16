@@ -1,0 +1,83 @@
+@use '../mixins' as *;
+@use '../functions' as *;
+@use '../variables' as *;
+
+.navigation {
+  margin-top: 36px;
+  max-width: 25%;
+  @include gutter;
+
+  @media only screen and (max-width: $mobile-max) {
+    display: none;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    max-width: none;
+    height: calc(100vh - 55px);
+    margin-top: 0;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 55px;
+      background-color: rgba(0, 0, 0, 0.48);
+      width: 100%;
+      height: calc(100vh - 55px);
+      z-index: 98;
+    }
+  }
+
+  > ul {
+    @include ul-reset;
+    padding-right: 24px;
+
+    @media only screen and (max-width: $mobile-max) {
+      padding-top: 36px;
+      width: 100%;
+      background-color: #fff;
+      max-width: 320px;
+      margin-left: -12px;
+      padding-left: 12px;
+      z-index: 99;
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    text-decoration: none;
+
+    &-active {
+      background-color: rgba(40, 46, 113, 0.06);
+
+      .link-icon svg * {
+        fill: var(--brand-primary);
+      }
+      .link-label {
+        color: var(--brand-primary);
+      }
+    }
+
+    &-icon {
+      @include inline-svg-icon(24px, #333);
+    }
+
+    &-label {
+      color: #333;
+      font-style: normal;
+      font-weight: 600;
+      font-size: rem(15px);
+      line-height: rem(18px);
+      margin-left: 12px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@mixin gutter($size: 12px) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin inline-svg-icon($size: 24px, $fill: #000) {
+  width: $size;
+  height: $size;
+  display: inline-flex;
+
+  svg {
+    width: inherit;
+    height: inherit;
+
+    path {
+      fill: $fill;
+    }
+  }
+}
+
+@mixin button-reset() {
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+@mixin ul-reset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
