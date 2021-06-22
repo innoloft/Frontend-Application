@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+%submit-button {
+    background-color: $primary-color;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 0 15px;
+    border: none;
+}

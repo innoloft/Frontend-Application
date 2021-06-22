@@ -1,0 +1,54 @@
+.userAccountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+.innerUserContainer {
+    display: flex;
+    min-width: 60%;
+    width: 60%;
+}
+
+.leftSide {
+    flex: 1;
+}
+
+.rightSide {
+    flex: 2;
+}
+
+.rightSide, .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    min-height: 600px;
+}
+
+@media (max-width: 1500px) {
+    .innerUserContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .innerUserContainer {
+        flex-direction: column;
+    }
+}

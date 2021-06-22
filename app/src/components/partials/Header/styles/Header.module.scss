@@ -1,0 +1,9 @@
+@import '../../../../static/styles/colors.scss';
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 50px -15px gray;
+}

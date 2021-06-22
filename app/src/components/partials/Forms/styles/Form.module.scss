@@ -1,0 +1,41 @@
+@import '../../../../static/styles/general.scss';
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    min-height: 600px;
+
+    input, select {
+        margin: 0 auto;
+        width: 60%;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    select {
+        height: 30px;
+    }
+}
+
+.submitButton {
+    @extend %submit-button;
+    width: 20%;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: background-color .2s;
+    font-size: 15px;
+    color: $background-color;
+
+    &:hover {
+        background-color: $background-color;
+        color: white;
+    }
+}
+
+.errorMessage {
+    color: crimson;
+}

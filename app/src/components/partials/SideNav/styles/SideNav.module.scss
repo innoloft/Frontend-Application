@@ -1,0 +1,33 @@
+@import '../../../../static/styles/colors.scss';
+
+.sideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sideNavLink {
+    color: $background-color;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color .1s;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.sideNavLink:hover {
+    color: $primary-color
+}
+
+@media (max-width: 1000px) {
+    .sideNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sideNavLink {
+        margin: 0 5px;
+    }
+}

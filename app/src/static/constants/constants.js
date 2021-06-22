@@ -1,0 +1,1 @@
+export const SIDE_NAV_TABS = ['Home', 'My Account', 'My Company', 'My Settings', 'News', 'Analytics'];
