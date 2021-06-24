@@ -1,0 +1,40 @@
+.tab {
+  margin: 10px;
+  padding: 0px;
+}
+
+.tablist {
+  margin-left: 0px;
+  display: flex;
+}
+
+.tablist__1 {
+  flex: 0 0 50%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablist__2 {
+  flex: 0 0 50%;
+  background: lightgrey;
+  padding: 20px;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 612px) {
+  .tablist__1 {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .tablist__2 {
+    font-size: 15px;
+  }
+}
