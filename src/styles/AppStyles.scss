@@ -1,0 +1,439 @@
+@import "./variables.scss";
+
+// path: components/Dashboard/Header.jsx
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: $themeColor;
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.5rem 13rem;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 19%;
+    .logo-image {
+      width: 50%;
+    }
+  }
+
+  &__menu-toggler {
+    display: none !important;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  &__search {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 30px;
+
+    .search-inner {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__input-bar {
+        padding: 0.4rem 2.2rem 0.4rem 0.6rem;
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      &__search-btn {
+        font-size: 18px;
+        position: absolute;
+        margin: 5px 0.6rem 0 0;
+        cursor: pointer;
+        background: none;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 26%;
+
+    .language-toggler,
+    .notification,
+    .profile {
+      cursor: pointer;
+      color: white;
+    }
+
+    .notification {
+      margin: 0 15px;
+    }
+
+    .profile {
+      &__image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// path: App.js
+.dashboard {
+  margin-top: 5rem;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 13rem;
+  }
+
+  // path: components/Dashboard/Sidebar.jsx
+  &__sidebar {
+    width: 16%;
+    height: 88vh;
+    position: fixed;
+    left: 13rem;
+    .sidebar-inner {
+      height: 83%;
+      border-bottom: solid 1px lightgrey;
+      overflow-y: auto;
+      &__profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        .image {
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        .btn {
+          &__exit-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+      &__link {
+        display: block;
+        padding: 15px 10px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          background: lightgrey;
+        }
+      }
+    }
+
+    .footer {
+      height: 17%;
+      padding: 1rem 0;
+      text-align: center;
+      &__copyright {
+        margin: 5px 0;
+        font-size: 12px;
+      }
+      &__links {
+        flex-wrap: wrap;
+        .footer-link {
+          text-decoration: none;
+          margin: 3px 7px;
+          color: grey;
+          &:hover {
+            color: $themeColor;
+          }
+        }
+      }
+      &__social-icons {
+        margin: 10px 0;
+        .social-icon {
+          margin: 0 5px;
+          color: grey;
+          &:hover {
+            color: $themeColor;
+          }
+        }
+      }
+    }
+  }
+
+  &__content-wrapper {
+    width: 79%;
+    display: flex;
+
+    // path: components/Dashboard/Main.jsx
+    .main-content {
+      width: 62%;
+      padding-right: 30px;
+      &__heading {
+        font-size: 22px;
+        margin: 0 0 15px 0;
+      }
+      &__subheading {
+        font-size: 16px;
+        margin: 0 0 30px 0;
+        font-weight: 300;
+      }
+
+      .main-card {
+        border-radius: 5px;
+        background: white;
+        box-shadow: lightgrey 0px 0px 5px;
+        &__tabs {
+          .account-setting-tab,
+          .user-setting-tab {
+            transition: 0.3s;
+            cursor: pointer;
+            width: 50%;
+            border-radius: 5px 0 0 0;
+            text-align: center;
+            padding: 10px 0;
+            &.active {
+              background: $themeColor;
+              color: white;
+            }
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+          .user-setting-tab {
+            border-radius: 0 5px 0 0;
+          }
+        }
+
+        &__content {
+          padding: 30px 25px;
+        }
+      }
+    }
+
+    // path: components/Dashboard/News.jsx
+    .side-content {
+      margin-top: 97px;
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      .card {
+        border-radius: 5px;
+        background: white;
+        padding: 20px;
+        box-shadow: lightgrey 0px 0px 5px;
+        &__heading {
+          font-size: 16px;
+          margin: 0 0 7px 0;
+          font-weight: 600;
+        }
+        &__image {
+          width: 100%;
+        }
+        &__title {
+          font-size: 16px;
+          margin: 10px 0;
+          font-weight: 600;
+        }
+        &__article {
+          margin: 0 0 15px 0;
+        }
+        &__read-more {
+          cursor: pointer;
+          color: grey;
+          &:hover {
+            color: $themeColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__container {
+      padding: 0.5rem 10rem;
+    }
+  }
+
+  // path: App.js
+  .dashboard {
+    &__container {
+      margin: 0 10rem;
+    }
+
+    // path: components/Dashboard/Sidebar.jsx
+    &__sidebar {
+      left: 10rem;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__container {
+      padding: 0.5rem 5rem;
+    }
+  }
+
+  // path: App.js
+  .dashboard {
+    &__container {
+      margin: 0 5rem;
+    }
+
+    // path: components/Dashboard/Sidebar.jsx
+    &__sidebar {
+      left: 5rem;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__container {
+      padding: 0.5rem 2rem;
+    }
+  }
+
+  // path: App.js
+  .dashboard {
+    &__container {
+      margin: 0 2rem;
+    }
+
+    // path: components/Dashboard/Sidebar.jsx
+    &__sidebar {
+      left: 2rem;
+      .sidebar-inner {
+        &__profile {
+          .image {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+    }
+
+    &__content-wrapper {
+      // path: components/Dashboard/Main.jsx
+      .main-content {
+        width: 97%;
+        padding-right: 0;
+      }
+
+      // path: components/Dashboard/News.jsx
+      .side-content {
+        display: none;
+        width: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__container {
+      padding: 0.5rem 3rem;
+      justify-content: space-between;
+    }
+
+    &__brand {
+      width: min-content;
+      .logo-image {
+        width: 90px;
+      }
+    }
+
+    &__menu-toggler {
+      display: flex !important;
+    }
+
+    &__search {
+      justify-content: center;
+      margin: 0;
+      width: min-content;
+
+      .search-inner {
+        &__input-bar {
+          width: 400px;
+        }
+      }
+    }
+  }
+
+  // path: App.js
+  .dashboard {
+    &__container {
+      justify-content: center;
+    }
+
+    // path: components/Dashboard/Sidebar.jsx
+    &__sidebar {
+      display: none;
+    }
+
+    &__content-wrapper {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__container {
+      padding: 0.5rem;
+    }
+
+    &__menu-toggler {
+      margin-right: 0;
+    }
+
+    &__search {
+      .search-inner {
+        &__input-bar {
+          width: 40vw;
+        }
+      }
+    }
+    &__content {
+      width: min-content;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  // path: components/Dashboard/Header.jsx
+  .navbar {
+    &__search {
+      justify-content: flex-end;
+      .search-inner {
+        &__input-bar {
+          width: 30vw;
+        }
+      }
+    }
+    &__content {
+      width: min-content;
+      .language-toggler,
+      .notification {
+        display: none;
+      }
+    }
+  }
+}

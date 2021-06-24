@@ -1,0 +1,137 @@
+@import "./variables.scss";
+
+// default typography
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: #f6f6f6;
+  color: #323b49;
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+// form and form-group
+.form-group {
+  margin-bottom: 24px;
+  button {
+    margin-top: 10px;
+  }
+  &__error-message {
+    font-weight: 600;
+    background: #ff8f8f;
+    color: white;
+    padding: 10px;
+    margin-bottom: 24px;
+  }
+}
+label {
+  display: block;
+  margin-bottom: 7px;
+}
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #f4f4f4;
+}
+input {
+  width: 60%;
+  &:focus {
+    background: #dfdede;
+    border-bottom: 3px solid $themeColor;
+  }
+}
+select {
+  width: 63%;
+}
+.input-error-message {
+  margin-top: 5px;
+  font-size: 12px;
+  color: red;
+}
+.pw-strength-meter {
+  transition: 0.3s;
+  height: 5px;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.pw-toggle-view-btn {
+  position: relative;
+  margin-left: -50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+// flexbox class
+.all-center,
+.all-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-center-column {
+  flex-direction: column;
+}
+
+// button class
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary {
+  background: $themeColor;
+  color: white;
+}
+.btn-sm {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-md {
+  font-size: 16px;
+  padding: 0.625em 1em;
+  border: 1px solid $themeColor;
+  &:hover {
+    background: white;
+    color: $themeColor;
+  }
+}
+
+@media (max-width: 1100px) {
+  // form and form-group
+  input,
+  select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  // form and form-group
+  input {
+    width: 90%;
+  }
+  select {
+    width: 95%;
+  }
+}
