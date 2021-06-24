@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+  background: purple;
+  color: aliceblue;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  height: 3rem;
+}
+
+nav ul li{
+  color: white;
+  cursor: pointer;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li:first-child{
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: .8rem 1rem;
+}
+
+.link:hover{
+  background: rgb(156, 44, 156);
+}
+
+
+
+main{
+  width: 100vw;
+  height: 100vh;
+}
+
+main h2{
+  margin-top: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product{
+  height: 100vh;
+  margin: .2rem 0;
+  display: grid;
+  grid-template-columns: .5fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "nav productImg userInfo"
+  "nav mainInfo userInfo"
+  "nav content map"
+  "nav content map"
+  ;
+}
+
+.side_nav{
+  grid-area: nav;
+  background: purple;
+  height: 100%;
+  text-align: center;
+}
+
+.side_nav ul{
+  margin-top: 5rem;
+}
+
+.side_nav ul li{
+  padding: 2rem auto;
+}
+
+.side_link{
+  text-decoration: none;
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.side_link:hover{
+  background: rgb(156, 44, 156);
+}
+
+.product_img{
+  grid-area: productImg;
+}
+
+.product_img img{
+  width: 100%;
+}
+
+.main_info{
+  grid-area: mainInfo;
+  margin: 1rem 2rem;
+  text-align: left;
+}
+
+
+.contents{
+  grid-area: content;
+  margin: 0 2rem;
+}
+
+.user_info{
+  grid-area: userInfo;
+  margin-top: 2rem;
+ text-align: center;
+}
+
+.user_info img{
+  width: 10rem;
+  height: 10rem;
+}
+
+.user_info h3 {
+  margin: 1rem 0;
+}
+
+.map{
+  grid-area: map;
+  background: darkred;
+ 
+}
+
+/* This is the tabs style */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #f1f1f1;
+  margin: 100px auto 0;
+  word-break: break-all;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+.tabs {
+
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs  {
+  background: white;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: #333;
+}
+
+
+
+button {
+  border: none;
+  
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
