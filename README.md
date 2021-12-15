@@ -16,7 +16,7 @@ Additional Information to submit a successful application:
 - Provide setup process if required
 - Copied structures or code from other applications will be completely ignored
 
-Thank you very much!
+Thank you very much and have fun with the challenge!
 
 # Main Task
 Your task is to create a new dashboard with which you will be displaying and editing product information.
@@ -98,4 +98,4 @@ The application should at the very least use the following:
 - (Optional) Linter
 - (Optional) Prettier
 
-When styling, you can decide for yourself what this dashboard should look like (even the structure-wise), make it look as nice as you can.
+When styling, you can decide for yourself what this dashboard should look like (even the structure-wise), make it look as nice as you can. If you need some inspiration, you can check out this [style guide](https://img.innoloft.com/pdf/styleguide_innoloft.pdf).
