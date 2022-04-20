@@ -1,4 +1,3 @@
-> :warning: **There won't be any new hires until at least April 2022**
 # Instructions
 Please stick to the following instructions on how to submit your application:
 1. Read the **whole** README
