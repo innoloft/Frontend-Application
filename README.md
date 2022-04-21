@@ -82,8 +82,8 @@ Please use **exactly** these endpoints:
 - APP Configuration
   - GET `/configuration/:appId/`
 
-You can also download the [Postman collections](https://api-test.innoloft.com/postman_collection.json).
-
+You can also download the [Postman collections](https://api-test.innoloft.com/postman_collection.json).  
+*Note: If you have CORS issues, there must be something wrong on your end. Check the exact paths again.*
 # Technical Requirements
 
 The application should at the very least use the following:
