@@ -51,8 +51,8 @@ It's not required that the main page has any content. **But it should be the def
 - Map should display company address of the product
 
 ## Editing Product
-It should be possible to edit the attributes of the product as well as add new once. The categories and business-models should be editable with a simple text input and the TRL with a dropdown.  
-For editing follow WYSIWYG methodology. When saving the product a PUT request has to be made to the API. Please keep in mind that the API itself **will not save your request**.
+It should be possible to change the description, edit the attributes as well as add new ones. The categories and business-models should be editable with a simple text input and the TRL with a dropdown. For editing the description follow the WYSIWYG methodology.  
+When saving the product a PUT request has to be made to the API. Please keep in mind that the API itself **will not save your request**.
 ### Example Mockup
 ![mockup](mockup.jpg)
 
@@ -88,11 +88,11 @@ You can also download the [Postman collections](https://api-test.innoloft.com/po
 
 The application should at the very least use the following:
 
-- React.js framework
 - JavaScript **or** TypeScript
+- React.js
 - Redux
 - CSS
-  - Your own CSS structure **or** Tailwind CSS
+  - Your own CSS structure **or** Tailwind CSS (do not use any other CSS frameworks)
   - A CSS pre-compiler (SASS, LESS, SCSS) or other CSS approaches (CSS modules, Styled components)
 - The dashboard should be responsive. It should **be usable on mobile and tablets**. There are no mockups for mobile and table views, adapt it to your taste.
 - (Optional) Linter
