@@ -92,7 +92,7 @@ The application should at the very least use the following:
 - React.js
 - Redux
 - CSS
-  - Your own CSS structure **or** Tailwind CSS (do not use any other CSS frameworks)
+  - Tailwind CSS **or** your own CSS structure (do not use any other CSS frameworks)
   - A CSS pre-compiler (SASS, LESS, SCSS) or other CSS approaches (CSS modules, Styled components)
 - The dashboard should be responsive. It should **be usable on mobile and tablets**. There are no mockups for mobile and table views, adapt it to your taste.
 - (Optional) Linter
