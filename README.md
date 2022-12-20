@@ -12,7 +12,7 @@ Please stick to the following instructions on how to submit your application:
 
 Additional Information to submit a successful application:
 - Make sure that your repository is public
-- Only an application with all requirements can be considered
+- Only an application with [all requirements](#technical-requirements) can be considered
 - Provide setup process if required
 - Copied structures or code from other applications will be completely ignored
 
