@@ -34,6 +34,12 @@ This structure will be the same on all pages.
 
 The dashboard should have at least three pages. The main page, the view of the product and the editing of the product.
 
+#### Example Mockup (Figma)
+- [View](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=0%3A1)
+- [Edit](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=1%3A2)
+
+*Note: This is just an example. There is no need to have it exactly like in the mockup.*
+
 ## Main (`/`)
 It's not required that the main page has any content. **But it should be the default page on the root path `/`.**
 
@@ -60,12 +66,6 @@ The product view should be used to display the single product information and sh
 ## Product Edit (`/product/edit`)
 It should be possible to change the description, edit the attributes as well as add new ones. The categories and business-models should be editable with a simple text input and the TRL with a dropdown. For editing the description follow the WYSIWYG methodology.  
 When saving the product a PUT request has to be made to the API. Please keep in mind that the API itself **will not save your request**.
-
-#### Example Mockup (Figma)
-- [View](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=0%3A1)
-- [Edit](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=1%3A2)
-
-*Note: This is just an example. There is no need to have it exactly like in the mockup.*
 
 # White-Labeling
 In this step you will have to apply different configurations to the dashboard. Here you will have to add environment variables (f.e. with a `.env` file). Depending on the `APP_ID` environment variable. If **no** `.env` file is given, make sure to add a fallback to `APP_ID=1`.
