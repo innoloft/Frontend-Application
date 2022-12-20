@@ -1,4 +1,4 @@
-# Instructions
+# Instructions 
 Please stick to the following instructions on how to submit your application:
 1. Read the **whole** README
 2. Create a new repository on your Github Account. *Note: The repository has to be public.*
@@ -8,7 +8,7 @@ Please stick to the following instructions on how to submit your application:
    * Link to **public** accessable repository on **GitHub**
    * How many hours it took to complete (roughly)
 
-**Please do not spend much more than 6 hours for the whole task.** This is not a hard limitation but want to respect your time since we cannot hire every applicant.
+**Please do not spend much more than 6 hours for the whole task.** This is not a hard limitation but want to respect your time since we cannot hire every applicant. Also only start with the task if you think this is something you can do in the given time frame. 
 
 Additional Information to submit a successful application:
 - Make sure that your repository is public
@@ -18,7 +18,7 @@ Additional Information to submit a successful application:
 
 Thank you very much and have fun with the challenge!
 
-# Main Task
+# Challenge
 Your task is to create a new dashboard with which you will be displaying and editing product information.
 
 First you have to setup the main dashboard with the main structure:
@@ -29,40 +29,51 @@ First you have to setup the main dashboard with the main structure:
 
 This structure will be the same on all pages.
 
+
+# Pages
+
+The dashboard should have at least three pages. The main page, the view of the product and the editing of the product.
+
+## Main (`/`)
 It's not required that the main page has any content. **But it should be the default page on the root path `/`.**
 
-## Product Page (`/product`)
-- Product image
-- Product main info should contain
-  - title
-  - type
-- 2 tab buttons to switch/change the tab content
+## Product View (`/product`)
+The product view should be used to display the single product information and should contain following elements:
+
+- Main Section
+  - Image
+  - Title
+  - Type
   - Description
-  - Attributes
-- Description tab should contain product description
-- Attributes tab should contain:
-  - categories (name only)
-  - business models (name only)
+- Details Section
+  - Technologies/Categories
+  - Business Models
   - [TRL](https://en.wikipedia.org/wiki/Technology_readiness_level)
+  - Investment Effort / Cost
+- Video Section
 - User info should contain:
-  - user image
-  - user name
-  - user company name
+  - Image
+  - Name
+  - Company Name
 - Map should display company address of the product
 
-## Editing Product
+## Product Edit (`/product/edit`)
 It should be possible to change the description, edit the attributes as well as add new ones. The categories and business-models should be editable with a simple text input and the TRL with a dropdown. For editing the description follow the WYSIWYG methodology.  
 When saving the product a PUT request has to be made to the API. Please keep in mind that the API itself **will not save your request**.
-### Example Mockup
-![mockup](mockup.jpg)
+
+#### Example Mockup (Figma)
+- [View](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=0%3A1)
+- [Edit](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=1%3A2)
+
+*Note: This is just an example. There is no need to have it exactly like in the mockup.*
 
 # White-Labeling
 In this step you will have to apply different configurations to the dashboard. Here you will have to add environment variables (f.e. with a `.env` file). Depending on the `APP_ID` environment variable. If **no** `.env` file is given, make sure to add a fallback to `APP_ID=1`.
-A configuration will look like that:
+A configuration will look like this:
 ```json
 {
     "id": 1,
-    "logo": "img.innoloft.de/logo.svg",
+    "logo": "https://img.innoloft.de/logo.svg",
     "mainColor": "#272e71",
     "hasUserSection": true
 }
@@ -91,11 +102,8 @@ The application should at the very least use the following:
 - JavaScript **or** TypeScript
 - React.js
 - Redux
-- CSS
-  - Tailwind CSS **or** your own CSS structure (do not use any other CSS frameworks)
-  - A CSS pre-compiler (SASS, LESS, SCSS) or other CSS approaches (CSS modules, Styled components)
-- The dashboard should be responsive. It should **be usable on mobile and tablets**. There are no mockups for mobile and table views, adapt it to your taste.
+- Tailwind CSS
 - (Optional) Linter
 - (Optional) Prettier
 
-When styling, you can decide for yourself what this dashboard should look like (even the structure-wise), make it look as nice as you can. If you need some inspiration, you can check out this [style guide](https://img.innoloft.com/pdf/styleguide_innoloft.pdf).
+Also make sure that the dashboard is responsive and works on mobile devices - TailwindCSS should help you here.
