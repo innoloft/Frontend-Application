@@ -102,6 +102,7 @@ The application should at the very least use the following:
 - React.js
 - Redux
 - Tailwind CSS
+- (optional) Form handler (f.e. react-hook-form)
 - (Optional) Linter
 - (Optional) Prettier
 
