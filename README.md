@@ -10,7 +10,7 @@ Please stick to the following instructions on how to submit your application:
 
 **Please do not spend much more than 6 hours for the whole task.** This is not a hard limitation but want to respect your time since we cannot hire every applicant. Also only start with the task if you think this is something you can do in the given time frame. 
 
-Additional Information to submit a successful application:
+### Additional Information to submit a successful application
 - Make sure that your repository is public
 - Only an application with [all requirements](#technical-requirements) can be considered
 - Provide setup process if required
@@ -31,14 +31,13 @@ This structure will be the same on all pages.
 
 
 # Pages
-
 The dashboard should have at least three pages. The main page, the view of the product and the editing of the product.
 
-#### Example Mockup (Figma)
+#### Mockups (Figma)
 - [View](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=0%3A1)
 - [Edit](https://www.figma.com/file/ts85mGEzMBSTAmueJ0cN55/Frontend-Application?node-id=1%3A2)
 
-*Note: This is just an example. There is no need to have it exactly like in the mockup.*
+*Note: This is just an example. There is no need to have it exactly like in the mockup. But it's **highly** recommended.*
 
 ## Main (`/`)
 It's not required that the main page has any content. **But it should be the default page on the root path `/`.**
